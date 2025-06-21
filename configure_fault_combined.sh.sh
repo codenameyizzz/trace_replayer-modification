@@ -1,19 +1,34 @@
 #!/usr/bin/env bash
 #
-# configure_fault_combined.sh — Run unified fault injection with one io_replayer binary
+# configure_fault_combined.sh — Unified fault injection control for all experiments
 
 set -e
 
 # Paths & defaults
-REPLAYER_SOURCE=io_replayer_all_combined.c
+if [ ! -z "$1" ]; then
+  TRACE="$1"
+fi
+REPLAYER_SOURCE=io_replayer_fixed_final.c
 BINARY=io_replayer
 DEVICE=/dev/nvme0n1
 TRACE=~/traces/trace_p100_sample100k.trace
 LOGDIR=~/logs
 
-# Prompt for fault experiment
-echo "Select fault experiment to inject:"
-select FAULT in   ftcx_firmware_tail   gc_read_slowness   raid_amplification; do
+# Present fault menu
+echo "Select fault to inject:"
+select FAULT in \
+  media_retries \
+  firmware_bug_random \
+  gc_pause \
+  mlc_variability \
+  ecc_read_retry \
+  firmware_bandwidth_drop \
+  voltage_read_retry \
+  firmware_throttle \
+  wear_pathology \
+  ftcx_firmware_tail \
+  gc_read_slowness \
+  raid_amplification; do
   [ -n "$FAULT" ] && break
 done
 
@@ -46,6 +61,10 @@ case $FAULT in
     EXTRA_DEFS="
       -DFAULT_RAID       -DFAULT_RAID_DELAY_MS=${DELAY_MS}       -DFAULT_RAID_START=${OFFSET_START}       -DFAULT_RAID_END=${OFFSET_END}       -DFAULT_RAID_TYPE=${IO_TYPE}"
     LOGTAG="raid_d${DELAY_MS}_o${OFFSET_START}-${OFFSET_END}_r${IO_TYPE}"
+    ;;
+  *)
+    echo "[WARN] Selected fault '${FAULT}' is not yet implemented in source code."
+    echo "No extra flags will be applied. Proceeding with default replay..."
     ;;
 esac
 
