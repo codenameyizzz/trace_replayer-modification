@@ -289,6 +289,11 @@ void *perform_io()
                     oft[cur_idx],
                     reqflag[cur_idx] == 0 ? "WRITE" : "READ");
 
+            printf("[RAID] Injecting delay at IO #%ld (offset=%ld, type=%s)\n",
+                   cur_idx,
+                   oft[cur_idx],
+                   reqflag[cur_idx] == 0 ? "WRITE" : "READ");
+
             usleep(injection_delay * 1000); // Convert ms to microseconds
         }
 
@@ -468,7 +473,7 @@ int main(int argc, char **argv)
     injection_delay = 0;
     injection_start = 0;
     injection_end = 0;
-    injection_type = 2; // default: BOTH
+    injection_type = 1; // default
 
     // Argument Parsing
     for (int i = 4; i < argc; i++)
