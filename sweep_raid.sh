@@ -17,7 +17,7 @@ TRACE=~/traces/trace_p100_sample10k_clean.trace
 LOGDIR=~/sweep_logs/raid_delay_sweep
 mkdir -p "$LOGDIR"
 
-echo "📦 Building..."
+echo " Building..."
 gcc io_replayer_raid.c -o io_replayer_raid -lpthread
 
 for DELAY in $(seq $START $STEP $END); do

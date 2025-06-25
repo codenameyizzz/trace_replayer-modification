@@ -10,7 +10,7 @@ set -e
 REPLAYER_SOURCE=io_replayer.c
 BINARY=io_replayer
 DEVICE=/dev/nvme0n1
-TRACE=~/traces/trace_p100_sample100k.trace
+TRACE=~/traces/trace_p100_sample10k_clean.trace
 LOGDIR=~/logs
 
 # 2) Pick one of our faults
