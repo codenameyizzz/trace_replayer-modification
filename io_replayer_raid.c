@@ -281,7 +281,7 @@ void *perform_io()
         // RAID Tail Amplification Injection Logic
         if (injection_delay > 0 &&
             oft[cur_idx] >= injection_start && oft[cur_idx] <= injection_end &&
-            (injection_type == 2 || injection_type == reqflag[cur_idx]))
+            (injection_type == 1 || injection_type == reqflag[cur_idx]))
         {
 
             fprintf(fp_log, "Injected delay of %d ms at IO #%ld offset=%ld type=%s\n",

@@ -20,7 +20,7 @@ mkdir -p "$LOGDIR"
 gcc io_replayer_raid.c -o io_replayer_raid -lpthread
 
 for DELAY in $(seq $START $STEP $END); do
-  echo "▶ Running delay = $DELAY ms"
+  echo " Running delay = $DELAY ms"
 
   LOGFILE=$LOGDIR/trace_raid_D${DELAY}.log
   sudo ./io_replayer_raid /dev/nvme0n1 $TRACE $LOGFILE \
