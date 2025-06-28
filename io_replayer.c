@@ -313,7 +313,7 @@ void *perform_io()
             gettimeofday(&now, NULL);
             int64_t now_us = now.tv_sec * 1e6 + now.tv_usec;
 
-            // Jadwalkan GC berikutnya jika waktu telah lewat
+            // GC scheduling
             if (now_us >= next_gc_start_us)
             {
                 // Start new GC window
@@ -325,15 +325,15 @@ void *perform_io()
                 next_gc_start_us = now_us + interval + jitter;
             }
 
-            // Hanya aktif jika berada dalam jendela waktu GC
+            // active in window timeframe
             int GC_MULT = GC_PAUSE_MULTIPLIER;
             if (gc_active && now_us <= gc_end_us)
             {
-                usleep(GC_MULT * 1000); // Delay per-I/O selama GC aktif
+                usleep(GC_MULT * 1000); // Delay per-I/O along active GC 
             }
             else
             {
-                gc_active = 0; // Matikan GC jika di luar jendela
+                gc_active = 0; 
             }
         }
 #endif

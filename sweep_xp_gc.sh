@@ -53,7 +53,7 @@ done
 SWEEP_DIR=~/sweep_logs/${FAULT}_sweep_${PARAM}
 mkdir -p "$SWEEP_DIR"
 
-echo "▶ sweeping $FAULT via $PARAM from $START..$END by $STEP"
+echo "sweeping $FAULT via $PARAM from $START..$END by $STEP"
 for v in $(seq "$START" "$STEP" "$END"); do
   echo
   echo "→ [$PARAM=$v]"
@@ -68,5 +68,4 @@ for v in $(seq "$START" "$STEP" "$END"); do
 done
 
 echo
-echo "✅ Sweep complete: logs in ${SWEEP_DIR}"
-
+echo " Sweep complete: logs in ${SWEEP_DIR}"

@@ -13,7 +13,7 @@ END=$3
 OFFSET_START=$4
 OFFSET_END=$5
 
-TRACE=~/traces/trace_p100_sample10k_clean.trace
+TRACE=~/traces/trace_p100_google_sample10k.trace
 LOGDIR=~/sweep_logs/raid_delay_sweep
 mkdir -p "$LOGDIR"
 
