@@ -1,0 +1,14 @@
+# blockade.yaml
+containers:
+  a:
+    image: cassandra:3.11
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]
+  b:
+    image: cassandra:3.11
+    depends_on: ["a"]
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]
+  c:
+    image: cassandra:3.11
+    depends_on: ["a","b"]
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]
+

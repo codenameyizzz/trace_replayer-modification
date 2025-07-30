@@ -1,0 +1,12 @@
+containers:
+  cassandra_a:
+    image: cassandra:3.11
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]
+  cassandra_b:
+    image: cassandra:3.11
+    depends_on: ["cassandra_a"]
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]
+  cassandra_c:
+    image: cassandra:3.11
+    depends_on: ["cassandra_a","cassandra_b"]
+    command: ["bash", "-lc", "cassandra -R && sleep 3600"]

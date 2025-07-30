@@ -1,0 +1,14 @@
+version: 2
+containers:
+  a:
+    image: cassandra:3.11
+    cap_add:
+      - NET_ADMIN
+  b:
+    image: cassandra:3.11
+    cap_add:
+      - NET_ADMIN
+  c:
+    image: cassandra:3.11
+    cap_add:
+      - NET_ADMIN

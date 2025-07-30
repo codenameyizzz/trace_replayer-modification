@@ -1,0 +1,885 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 30 SECONDS
+  No Warmup: false
+  Consistency Level: QUORUM
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 100
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: NORMAL
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [172.17.0.2:9042, 172.17.0.3:9042, 172.17.0.4:9042]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: Test Cluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /172.17.0.4; Rack: rack1
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+java.io.IOException: Operation x10 on key(s) [31383334393132383431]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [37314b4e38504d394d30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d36313350394d303230]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d4c34314f4f50343531]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [333837343037394d3531]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3238394b3432324c4f30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d4e38303432504d4c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c334f304e3132393231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f344c4e344c344b3231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [39303536384e374c3430]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [504b4d4b5036364f3231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [354e4d5033374b4e3230]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [343436334e4b35383530]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3832334b393338364c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [33374e33503431304c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [34334c30384c314e4e30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [364c364b393832373331]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d344e3339364e384c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3639334e3732504e3930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4b3832364f3531343330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [394b304b504c31503930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [30374b37384e364c3531]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [393935374b4d4e333231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [323634374f3036334d30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [37373539364d4f323330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f503030314c35393330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3937324b38364b4b3830]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [364c374d4e354f353030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d4b3130323833353630]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [35353650324b4d313030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [325036334f3733343830]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3230313450394c303331]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [324f4e364e3338373930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d34374e4e354e353131]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3532304f324d4e313631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [31323739393833373230]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [314e344b4d504d4b4b30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3239323735364e374e30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [374f324e363531323730]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [364d4b4e394d4b355030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [32304b344b4f50333731]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [324e32343834344d3131]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [36384b30374f33314c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c343933323136344b30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [50335036504e33504f30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c4d5033334f33304e30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f33384d3834384b3330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [39384c36394b35373730]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c4c3637324b38334f30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3533394b3330394f3431]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [364b4f504d3133393130]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3038354b4e4d4b364e30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f32364b4f3938323031]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [394e35344e4b34383631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c504e334b334c344f30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d4f3231353437393631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4e3536304b4b38354b30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c303936503250503530]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4e4d4e4e4f324c313431]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [30503337373039503231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [36335030503039315030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [37334e4b4b3530333631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [504c4f4d393136363630]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f35344b355050363131]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [364f354d344c354b3130]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [334f4c30393850383031]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3734384e5034344f4e30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [313637364d364b4c3630]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c364e323834354d3030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [33314b30304f364e3131]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f304b4d315030363230]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [37393137333736503031]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [36353330353438393530]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [38504c3937394d4f3530]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [343632314b354e343331]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [31314d363439504c4b30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3839374e4f3736324c30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4b373034344c314d5030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c4f3437395050375030]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f384c4b37394c4f3631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3738384b32334c323231]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4e323830333531313930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4c4f3333393133383330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3337343334304e4d3630]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f4b3530394e4b393730]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [5031333932334d323130]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4b35343637304b503130]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [383138373434344c3331]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [304b393933304b4f3330]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4f33314e33394d4e3730]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [34504b33354e4b383930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [38324b394f4f33333730]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4e34344f5050384e3631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [4d504c4e353832363531]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [3034354e4b4f33323930]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [50364d4e4d3850394f30]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [343550504e4f30353430]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [5038304e324d4f313530]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [334d50324d4e374d3230]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)
+java.io.IOException: Operation x10 on key(s) [304b383750324f503631]: Error executing: (NoHostAvailableException): All host(s) tried for query failed (tried: 172.17.0.4/172.17.0.4:9042 (com.datastax.driver.core.exceptions.UnavailableException: Not enough replicas available for query at consistency QUORUM (2 required but only 1 alive)))
+
+	at org.apache.cassandra.stress.Operation.error(Operation.java:136)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:114)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:101)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:109)
+	at org.apache.cassandra.stress.operations.predefined.CqlOperation.run(CqlOperation.java:264)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:472)

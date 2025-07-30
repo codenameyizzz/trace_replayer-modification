@@ -1,0 +1,2337 @@
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.deserializeLargeSubset (Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/Columns;I)Lorg/apache/cassandra/db/Columns;
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubset (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;ILorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubsetSize (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;I)I
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.deserializeLargeSubset (Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/Columns;I)Lorg/apache/cassandra/db/Columns;
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubset (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;ILorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubsetSize (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;I)I
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/commitlog/AbstractCommitLogSegmentManager.advanceAllocatingFrom (Lorg/apache/cassandra/db/commitlog/CommitLogSegment;)V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/transform/BaseIterator.tryGetMoreContents ()Z
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stop ()V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stopInPartition ()V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.doFlush (I)V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeExcessSlow ()V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeSlow (JI)V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/commitlog/AbstractCommitLogSegmentManager.advanceAllocatingFrom (Lorg/apache/cassandra/db/commitlog/CommitLogSegment;)V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/transform/BaseIterator.tryGetMoreContents ()Z
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stop ()V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stopInPartition ()V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.doFlush (I)V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeExcessSlow ()V
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeSlow (JI)V
+cassandra_b  | CompilerOracle: dontinline org/apache/cassandra/io/util/RebufferingInputStream.readPrimitiveSlowly (I)J
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/db/rows/UnfilteredSerializer.serializeRowBody (Lorg/apache/cassandra/db/rows/Row;ILorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/io/util/Memory.checkBounds (JJ)V
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/io/util/SafeMemory.checkBounds (JJ)V
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.selectBoundary (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;II)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.strictnessOfLessThan (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;)I
+cassandra_a  | CompilerOracle: dontinline org/apache/cassandra/io/util/RebufferingInputStream.readPrimitiveSlowly (I)J
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/db/rows/UnfilteredSerializer.serializeRowBody (Lorg/apache/cassandra/db/rows/Row;ILorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.indexes (Lorg/apache/cassandra/utils/IFilter/FilterKey;)[J
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.setIndexes (JJIJ[J)V
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare (Ljava/nio/ByteBuffer;[B)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/io/util/Memory.checkBounds (JJ)V
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/io/util/SafeMemory.checkBounds (JJ)V
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.selectBoundary (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;II)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.strictnessOfLessThan (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.indexes (Lorg/apache/cassandra/utils/IFilter/FilterKey;)[J
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.setIndexes (JJIJ[J)V
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare (Ljava/nio/ByteBuffer;[B)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare ([BLjava/nio/ByteBuffer;)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compareUnsigned (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare ([BLjava/nio/ByteBuffer;)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compareUnsigned (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/lang/Object;JI)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/nio/ByteBuffer;)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_b  | CompilerOracle: inline org/apache/cassandra/utils/vint/VIntCoding.encodeVInt (JI)[B
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/lang/Object;JI)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/nio/ByteBuffer;)I
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | CompilerOracle: inline org/apache/cassandra/utils/vint/VIntCoding.encodeVInt (JI)[B
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.deserializeLargeSubset (Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/Columns;I)Lorg/apache/cassandra/db/Columns;
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubset (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;ILorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/Columns$Serializer.serializeLargeSubsetSize (Ljava/util/Collection;ILorg/apache/cassandra/db/Columns;I)I
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/commitlog/AbstractCommitLogSegmentManager.advanceAllocatingFrom (Lorg/apache/cassandra/db/commitlog/CommitLogSegment;)V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/transform/BaseIterator.tryGetMoreContents ()Z
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stop ()V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/db/transform/StoppingTransformation.stopInPartition ()V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.doFlush (I)V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeExcessSlow ()V
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/io/util/BufferedDataOutputStreamPlus.writeSlow (JI)V
+cassandra_c  | CompilerOracle: dontinline org/apache/cassandra/io/util/RebufferingInputStream.readPrimitiveSlowly (I)J
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/db/rows/UnfilteredSerializer.serializeRowBody (Lorg/apache/cassandra/db/rows/Row;ILorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/io/util/DataOutputPlus;)V
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/io/util/Memory.checkBounds (JJ)V
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/io/util/SafeMemory.checkBounds (JJ)V
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.selectBoundary (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;II)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/AsymmetricOrdering.strictnessOfLessThan (Lorg/apache/cassandra/utils/AsymmetricOrdering/Op;)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.indexes (Lorg/apache/cassandra/utils/IFilter/FilterKey;)[J
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/BloomFilter.setIndexes (JJIJ[J)V
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare (Ljava/nio/ByteBuffer;[B)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compare ([BLjava/nio/ByteBuffer;)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/ByteBufferUtil.compareUnsigned (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/lang/Object;JI)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/lang/Object;JILjava/nio/ByteBuffer;)I
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/FastByteOperations$UnsafeOperations.compareTo (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
+cassandra_c  | CompilerOracle: inline org/apache/cassandra/utils/vint/VIntCoding.encodeVInt (JI)[B
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,459 YamlConfigurationLoader.java:93 - Configuration location: file:/etc/cassandra/cassandra.yaml
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,758 Config.java:555 - Node configuration:[allocate_tokens_for_keyspace=null; allow_extra_insecure_udfs=false; allow_insecure_udfs=false; authenticator=AllowAllAuthenticator; authorizer=AllowAllAuthorizer; auto_bootstrap=true; auto_snapshot=true; back_pressure_enabled=false; back_pressure_strategy=org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}; batch_size_fail_threshold_in_kb=50; batch_size_warn_threshold_in_kb=5; batchlog_replay_throttle_in_kb=1024; broadcast_address=null; broadcast_rpc_address=null; buffer_pool_use_heap_if_exhausted=true; cache_load_timeout_seconds=30; cas_contention_timeout_in_ms=1000; cdc_enabled=false; cdc_free_space_check_interval_ms=250; cdc_raw_directory=null; cdc_total_space_in_mb=0; check_for_duplicate_rows_during_compaction=true; check_for_duplicate_rows_during_reads=true; client_encryption_options=<REDACTED>; cluster_name=Test Cluster; column_index_cache_size_in_kb=2; column_index_size_in_kb=64; commit_failure_policy=stop; commitlog_compression=null; commitlog_directory=null; commitlog_max_compression_buffers_in_pool=3; commitlog_periodic_queue_size=-1; commitlog_segment_size_in_mb=32; commitlog_sync=periodic; commitlog_sync_batch_window_in_ms=NaN; commitlog_sync_period_in_ms=10000; commitlog_total_space_in_mb=null; compaction_large_partition_warning_threshold_mb=100; compaction_throughput_mb_per_sec=16; concurrent_compactors=null; concurrent_counter_writes=32; concurrent_materialized_view_writes=32; concurrent_reads=32; concurrent_replicates=null; concurrent_writes=32; counter_cache_keys_to_save=2147483647; counter_cache_save_period=7200; counter_cache_size_in_mb=null; counter_write_request_timeout_in_ms=5000; credentials_cache_max_entries=1000; credentials_update_interval_in_ms=-1; credentials_validity_in_ms=2000; cross_node_timeout=false; data_file_directories=[Ljava.lang.String;@38c5cc4c; disk_access_mode=auto; disk_failure_policy=stop; disk_optimization_estimate_percentile=0.95; disk_optimization_page_cross_chance=0.1; disk_optimization_strategy=ssd; dynamic_snitch=true; dynamic_snitch_badness_threshold=0.1; dynamic_snitch_reset_interval_in_ms=600000; dynamic_snitch_update_interval_in_ms=100; enable_drop_compact_storage=false; enable_materialized_views=true; enable_sasi_indexes=true; enable_scripted_user_defined_functions=false; enable_user_defined_functions=false; enable_user_defined_functions_threads=true; encryption_options=<REDACTED>; endpoint_snitch=SimpleSnitch; file_cache_round_up=null; file_cache_size_in_mb=null; force_new_prepared_statement_behaviour=false; gc_log_threshold_in_ms=200; gc_warn_threshold_in_ms=1000; hinted_handoff_disabled_datacenters=[]; hinted_handoff_enabled=true; hinted_handoff_throttle_in_kb=1024; hints_compression=null; hints_directory=null; hints_flush_period_in_ms=10000; incremental_backups=false; index_interval=null; index_summary_capacity_in_mb=null; index_summary_resize_interval_in_minutes=60; initial_token=null; inter_dc_stream_throughput_outbound_megabits_per_sec=200; inter_dc_tcp_nodelay=false; internode_authenticator=null; internode_compression=dc; internode_recv_buff_size_in_bytes=0; internode_send_buff_size_in_bytes=0; key_cache_keys_to_save=2147483647; key_cache_save_period=14400; key_cache_size_in_mb=null; listen_address=localhost; listen_interface=null; listen_interface_prefer_ipv6=false; listen_on_broadcast_address=false; max_hint_window_in_ms=10800000; max_hints_delivery_threads=2; max_hints_file_size_in_mb=128; max_mutation_size_in_kb=null; max_streaming_retries=3; max_value_size_in_mb=256; memtable_allocation_type=heap_buffers; memtable_cleanup_threshold=null; memtable_flush_writers=0; memtable_heap_space_in_mb=null; memtable_offheap_space_in_mb=null; min_free_space_per_drive_in_mb=50; native_transport_flush_in_batches_legacy=true; native_transport_max_concurrent_connections=-1; native_transport_max_concurrent_connections_per_ip=-1; native_transport_max_concurrent_requests_in_bytes=-1; native_transport_max_concurrent_requests_in_bytes_per_ip=-1; native_transport_max_frame_size_in_mb=256; native_transport_max_negotiable_protocol_version=-2147483648; native_transport_max_threads=128; native_transport_port=9042; native_transport_port_ssl=null; num_tokens=256; otc_backlog_expiration_interval_ms=200; otc_coalescing_enough_coalesced_messages=8; otc_coalescing_strategy=DISABLED; otc_coalescing_window_us=200; partitioner=org.apache.cassandra.dht.Murmur3Partitioner; permissions_cache_max_entries=1000; permissions_update_interval_in_ms=-1; permissions_validity_in_ms=2000; phi_convict_threshold=8.0; prepared_statements_cache_size_mb=null; range_request_timeout_in_ms=10000; read_request_timeout_in_ms=5000; repair_session_max_tree_depth=18; request_scheduler=org.apache.cassandra.scheduler.NoScheduler; request_scheduler_id=null; request_scheduler_options=null; request_timeout_in_ms=10000; role_manager=CassandraRoleManager; roles_cache_max_entries=1000; roles_update_interval_in_ms=-1; roles_validity_in_ms=2000; row_cache_class_name=org.apache.cassandra.cache.OHCProvider; row_cache_keys_to_save=2147483647; row_cache_save_period=0; row_cache_size_in_mb=0; rpc_address=localhost; rpc_interface=null; rpc_interface_prefer_ipv6=false; rpc_keepalive=true; rpc_listen_backlog=50; rpc_max_threads=2147483647; rpc_min_threads=16; rpc_port=9160; rpc_recv_buff_size_in_bytes=null; rpc_send_buff_size_in_bytes=null; rpc_server_type=sync; saved_caches_directory=null; seed_provider=org.apache.cassandra.locator.SimpleSeedProvider{seeds=127.0.0.1}; server_encryption_options=<REDACTED>; slow_query_log_timeout_in_ms=500; snapshot_before_compaction=false; snapshot_on_duplicate_row_detection=false; ssl_storage_port=7001; sstable_preemptive_open_interval_in_mb=50; start_native_transport=true; start_rpc=false; storage_port=7000; stream_throughput_outbound_megabits_per_sec=200; streaming_keep_alive_period_in_secs=300; streaming_socket_timeout_in_ms=86400000; thrift_framed_transport_size_in_mb=15; thrift_max_message_length_in_mb=16; thrift_prepared_statements_cache_size_mb=null; tombstone_failure_threshold=100000; tombstone_warn_threshold=1000; tracetype_query_ttl=86400; tracetype_repair_ttl=604800; transparent_data_encryption_options=org.apache.cassandra.config.TransparentDataEncryptionOptions@37918c79; trickle_fsync=false; trickle_fsync_interval_in_kb=10240; truncate_request_timeout_in_ms=60000; unlogged_batch_across_partitions_warn_threshold=10; user_defined_function_fail_timeout=1500; user_defined_function_warn_timeout=500; user_function_timeout_policy=die; windows_timer_interval=1; write_request_timeout_in_ms=2000]
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,758 DatabaseDescriptor.java:381 - DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,759 DatabaseDescriptor.java:439 - Global memtable on-heap threshold is enabled at 1996MB
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,759 DatabaseDescriptor.java:443 - Global memtable off-heap threshold is enabled at 1996MB
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,908 RateBasedBackPressure.java:123 - Initialized back-pressure with high ratio: 0.9, factor: 5, flow: FAST, window size: 2000.
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,908 DatabaseDescriptor.java:781 - Back-pressure is disabled with strategy org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}.
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,979 JMXServerUtils.java:256 - Configured JMX server at: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:7199/jmxrmi
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,983 CassandraDaemon.java:490 - Hostname: a33204e76d41
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,983 CassandraDaemon.java:497 - JVM vendor/version: OpenJDK 64-Bit Server VM/1.8.0_452
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,986 CassandraDaemon.java:498 - Heap size: 7.800GiB/7.800GiB
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,057 YamlConfigurationLoader.java:93 - Configuration location: file:/etc/cassandra/cassandra.yaml
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,987 CassandraDaemon.java:503 - Code Cache Non-heap memory: init = 2555904(2496K) used = 7528832(7352K) committed = 7602176(7424K) max = 251658240(245760K)
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,987 CassandraDaemon.java:503 - Metaspace Non-heap memory: init = 0(0K) used = 19687344(19225K) committed = 20316160(19840K) max = -1(-1K)
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,987 CassandraDaemon.java:503 - Compressed Class Space Non-heap memory: init = 0(0K) used = 2335360(2280K) committed = 2490368(2432K) max = 1073741824(1048576K)
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,988 CassandraDaemon.java:503 - Par Eden Space Heap memory: init = 1718091776(1677824K) used = 377980712(369121K) committed = 1718091776(1677824K) max = 1718091776(1677824K)
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,988 CassandraDaemon.java:503 - Par Survivor Space Heap memory: init = 214695936(209664K) used = 0(0K) committed = 214695936(209664K) max = 214695936(209664K)
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,988 CassandraDaemon.java:503 - CMS Old Gen Heap memory: init = 6442450944(6291456K) used = 0(0K) committed = 6442450944(6291456K) max = 6442450944(6291456K)
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,988 CassandraDaemon.java:505 - Classpath: /etc/cassandra:/opt/cassandra/build/classes/main:/opt/cassandra/build/classes/thrift:/opt/cassandra/lib/HdrHistogram-2.1.9.jar:/opt/cassandra/lib/ST4-4.0.8.jar:/opt/cassandra/lib/airline-0.6.jar:/opt/cassandra/lib/antlr-runtime-3.5.2.jar:/opt/cassandra/lib/apache-cassandra-3.11.19.jar:/opt/cassandra/lib/apache-cassandra-thrift-3.11.19.jar:/opt/cassandra/lib/asm-5.0.4.jar:/opt/cassandra/lib/caffeine-2.2.6.jar:/opt/cassandra/lib/cassandra-driver-core-3.0.1-shaded.jar:/opt/cassandra/lib/commons-cli-1.1.jar:/opt/cassandra/lib/commons-codec-1.9.jar:/opt/cassandra/lib/commons-lang3-3.1.jar:/opt/cassandra/lib/commons-math3-3.2.jar:/opt/cassandra/lib/compress-lzf-0.8.4.jar:/opt/cassandra/lib/concurrent-trees-2.4.0.jar:/opt/cassandra/lib/concurrentlinkedhashmap-lru-1.4.jar:/opt/cassandra/lib/disruptor-3.0.1.jar:/opt/cassandra/lib/ecj-4.4.2.jar:/opt/cassandra/lib/guava-18.0.jar:/opt/cassandra/lib/high-scale-lib-1.0.6.jar:/opt/cassandra/lib/hppc-0.5.4.jar:/opt/cassandra/lib/jackson-annotations-2.13.2.jar:/opt/cassandra/lib/jackson-core-2.13.2.jar:/opt/cassandra/lib/jackson-databind-2.13.2.2.jar:/opt/cassandra/lib/jamm-0.3.0.jar:/opt/cassandra/lib/javax.inject-1.jar:/opt/cassandra/lib/jbcrypt-0.4.jar:/opt/cassandra/lib/jcl-over-slf4j-1.7.25.jar:/opt/cassandra/lib/jctools-core-1.2.1.jar:/opt/cassandra/lib/jna-4.2.2.jar:/opt/cassandra/lib/joda-time-2.4.jar:/opt/cassandra/lib/json-simple-1.1.jar:/opt/cassandra/lib/libthrift-0.9.2.jar:/opt/cassandra/lib/log4j-over-slf4j-1.7.25.jar:/opt/cassandra/lib/logback-classic-1.2.9.jar:/opt/cassandra/lib/logback-core-1.2.9.jar:/opt/cassandra/lib/lz4-1.3.0.jar:/opt/cassandra/lib/metrics-core-3.1.5.jar:/opt/cassandra/lib/metrics-jvm-3.1.5.jar:/opt/cassandra/lib/metrics-logback-3.1.5.jar:/opt/cassandra/lib/netty-all-4.0.44.Final.jar:/opt/cassandra/lib/ohc-core-0.4.4.jar:/opt/cassandra/lib/ohc-core-j8-0.4.4.jar:/opt/cassandra/lib/reporter-config-base-3.0.3.jar:/opt/cassandra/lib/reporter-config3-3.0.3.jar:/opt/cassandra/lib/sigar-1.6.4.jar:/opt/cassandra/lib/slf4j-api-1.7.25.jar:/opt/cassandra/lib/snakeyaml-1.26.jar:/opt/cassandra/lib/snappy-java-1.1.10.4.jar:/opt/cassandra/lib/snowball-stemmer-1.3.0.581.1.jar:/opt/cassandra/lib/stream-2.5.2.jar:/opt/cassandra/lib/thrift-server-0.3.7.jar:/opt/cassandra/lib/jsr223/*/*.jar::/opt/cassandra/lib/jamm-0.3.0.jar
+cassandra_a  | INFO  [main] 2025-07-06 21:11:32,989 CassandraDaemon.java:507 - JVM Arguments: [-Xloggc:/opt/cassandra/logs/gc.log, -ea, -XX:+UseThreadPriorities, -XX:ThreadPriorityPolicy=42, -XX:+HeapDumpOnOutOfMemoryError, -Xss256k, -XX:StringTableSize=1000003, -XX:+AlwaysPreTouch, -XX:-UseBiasedLocking, -XX:+UseTLAB, -XX:+ResizeTLAB, -XX:+UseNUMA, -XX:+PerfDisableSharedMem, -Djava.net.preferIPv4Stack=true, -XX:+UseParNewGC, -XX:+UseConcMarkSweepGC, -XX:+CMSParallelRemarkEnabled, -XX:SurvivorRatio=8, -XX:MaxTenuringThreshold=1, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:CMSWaitDuration=10000, -XX:+CMSParallelInitialMarkEnabled, -XX:+CMSEdenChunksRecordAlways, -XX:+CMSClassUnloadingEnabled, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintHeapAtGC, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -XX:+PrintPromotionFailure, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=10M, -Xms8192M, -Xmx8192M, -Xmn2048M, -XX:+UseCondCardMark, -XX:CompileCommandFile=/etc/cassandra/hotspot_compiler, -javaagent:/opt/cassandra/lib/jamm-0.3.0.jar, -Dcassandra.jmx.local.port=7199, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.password.file=/etc/cassandra/jmxremote.password, -Djava.library.path=/opt/cassandra/lib/sigar-bin, -Dcassandra.libjemalloc=/usr/local/lib/libjemalloc.so, -XX:OnOutOfMemoryError=kill -9 %p, -Dlogback.configurationFile=logback.xml, -Dcassandra.logdir=/opt/cassandra/logs, -Dcassandra.storagedir=/opt/cassandra/data]
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:32,771 YamlConfigurationLoader.java:93 - Configuration location: file:/etc/cassandra/cassandra.yaml
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,034 NativeLibrary.java:189 - Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out, especially with mmapped I/O enabled. Increase RLIMIT_MEMLOCK or run Cassandra as root.
+cassandra_a  | INFO  [main] 2025-07-06 21:11:33,035 StartupChecks.java:140 - jemalloc seems to be preloaded from /usr/local/lib/libjemalloc.so
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,035 StartupChecks.java:169 - JMX is not enabled to receive remote connections. Please see cassandra-env.sh for more info.
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:33,037 SigarLibrary.java:44 - Initializing SIGAR library
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,031 Config.java:555 - Node configuration:[allocate_tokens_for_keyspace=null; allow_extra_insecure_udfs=false; allow_insecure_udfs=false; authenticator=AllowAllAuthenticator; authorizer=AllowAllAuthorizer; auto_bootstrap=true; auto_snapshot=true; back_pressure_enabled=false; back_pressure_strategy=org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}; batch_size_fail_threshold_in_kb=50; batch_size_warn_threshold_in_kb=5; batchlog_replay_throttle_in_kb=1024; broadcast_address=null; broadcast_rpc_address=null; buffer_pool_use_heap_if_exhausted=true; cache_load_timeout_seconds=30; cas_contention_timeout_in_ms=1000; cdc_enabled=false; cdc_free_space_check_interval_ms=250; cdc_raw_directory=null; cdc_total_space_in_mb=0; check_for_duplicate_rows_during_compaction=true; check_for_duplicate_rows_during_reads=true; client_encryption_options=<REDACTED>; cluster_name=Test Cluster; column_index_cache_size_in_kb=2; column_index_size_in_kb=64; commit_failure_policy=stop; commitlog_compression=null; commitlog_directory=null; commitlog_max_compression_buffers_in_pool=3; commitlog_periodic_queue_size=-1; commitlog_segment_size_in_mb=32; commitlog_sync=periodic; commitlog_sync_batch_window_in_ms=NaN; commitlog_sync_period_in_ms=10000; commitlog_total_space_in_mb=null; compaction_large_partition_warning_threshold_mb=100; compaction_throughput_mb_per_sec=16; concurrent_compactors=null; concurrent_counter_writes=32; concurrent_materialized_view_writes=32; concurrent_reads=32; concurrent_replicates=null; concurrent_writes=32; counter_cache_keys_to_save=2147483647; counter_cache_save_period=7200; counter_cache_size_in_mb=null; counter_write_request_timeout_in_ms=5000; credentials_cache_max_entries=1000; credentials_update_interval_in_ms=-1; credentials_validity_in_ms=2000; cross_node_timeout=false; data_file_directories=[Ljava.lang.String;@38c5cc4c; disk_access_mode=auto; disk_failure_policy=stop; disk_optimization_estimate_percentile=0.95; disk_optimization_page_cross_chance=0.1; disk_optimization_strategy=ssd; dynamic_snitch=true; dynamic_snitch_badness_threshold=0.1; dynamic_snitch_reset_interval_in_ms=600000; dynamic_snitch_update_interval_in_ms=100; enable_drop_compact_storage=false; enable_materialized_views=true; enable_sasi_indexes=true; enable_scripted_user_defined_functions=false; enable_user_defined_functions=false; enable_user_defined_functions_threads=true; encryption_options=<REDACTED>; endpoint_snitch=SimpleSnitch; file_cache_round_up=null; file_cache_size_in_mb=null; force_new_prepared_statement_behaviour=false; gc_log_threshold_in_ms=200; gc_warn_threshold_in_ms=1000; hinted_handoff_disabled_datacenters=[]; hinted_handoff_enabled=true; hinted_handoff_throttle_in_kb=1024; hints_compression=null; hints_directory=null; hints_flush_period_in_ms=10000; incremental_backups=false; index_interval=null; index_summary_capacity_in_mb=null; index_summary_resize_interval_in_minutes=60; initial_token=null; inter_dc_stream_throughput_outbound_megabits_per_sec=200; inter_dc_tcp_nodelay=false; internode_authenticator=null; internode_compression=dc; internode_recv_buff_size_in_bytes=0; internode_send_buff_size_in_bytes=0; key_cache_keys_to_save=2147483647; key_cache_save_period=14400; key_cache_size_in_mb=null; listen_address=localhost; listen_interface=null; listen_interface_prefer_ipv6=false; listen_on_broadcast_address=false; max_hint_window_in_ms=10800000; max_hints_delivery_threads=2; max_hints_file_size_in_mb=128; max_mutation_size_in_kb=null; max_streaming_retries=3; max_value_size_in_mb=256; memtable_allocation_type=heap_buffers; memtable_cleanup_threshold=null; memtable_flush_writers=0; memtable_heap_space_in_mb=null; memtable_offheap_space_in_mb=null; min_free_space_per_drive_in_mb=50; native_transport_flush_in_batches_legacy=true; native_transport_max_concurrent_connections=-1; native_transport_max_concurrent_connections_per_ip=-1; native_transport_max_concurrent_requests_in_bytes=-1; native_transport_max_concurrent_requests_in_bytes_per_ip=-1; native_transport_max_frame_size_in_mb=256; native_transport_max_negotiable_protocol_version=-2147483648; native_transport_max_threads=128; native_transport_port=9042; native_transport_port_ssl=null; num_tokens=256; otc_backlog_expiration_interval_ms=200; otc_coalescing_enough_coalesced_messages=8; otc_coalescing_strategy=DISABLED; otc_coalescing_window_us=200; partitioner=org.apache.cassandra.dht.Murmur3Partitioner; permissions_cache_max_entries=1000; permissions_update_interval_in_ms=-1; permissions_validity_in_ms=2000; phi_convict_threshold=8.0; prepared_statements_cache_size_mb=null; range_request_timeout_in_ms=10000; read_request_timeout_in_ms=5000; repair_session_max_tree_depth=18; request_scheduler=org.apache.cassandra.scheduler.NoScheduler; request_scheduler_id=null; request_scheduler_options=null; request_timeout_in_ms=10000; role_manager=CassandraRoleManager; roles_cache_max_entries=1000; roles_update_interval_in_ms=-1; roles_validity_in_ms=2000; row_cache_class_name=org.apache.cassandra.cache.OHCProvider; row_cache_keys_to_save=2147483647; row_cache_save_period=0; row_cache_size_in_mb=0; rpc_address=localhost; rpc_interface=null; rpc_interface_prefer_ipv6=false; rpc_keepalive=true; rpc_listen_backlog=50; rpc_max_threads=2147483647; rpc_min_threads=16; rpc_port=9160; rpc_recv_buff_size_in_bytes=null; rpc_send_buff_size_in_bytes=null; rpc_server_type=sync; saved_caches_directory=null; seed_provider=org.apache.cassandra.locator.SimpleSeedProvider{seeds=127.0.0.1}; server_encryption_options=<REDACTED>; slow_query_log_timeout_in_ms=500; snapshot_before_compaction=false; snapshot_on_duplicate_row_detection=false; ssl_storage_port=7001; sstable_preemptive_open_interval_in_mb=50; start_native_transport=true; start_rpc=false; storage_port=7000; stream_throughput_outbound_megabits_per_sec=200; streaming_keep_alive_period_in_secs=300; streaming_socket_timeout_in_ms=86400000; thrift_framed_transport_size_in_mb=15; thrift_max_message_length_in_mb=16; thrift_prepared_statements_cache_size_mb=null; tombstone_failure_threshold=100000; tombstone_warn_threshold=1000; tracetype_query_ttl=86400; tracetype_repair_ttl=604800; transparent_data_encryption_options=org.apache.cassandra.config.TransparentDataEncryptionOptions@37918c79; trickle_fsync=false; trickle_fsync_interval_in_kb=10240; truncate_request_timeout_in_ms=60000; unlogged_batch_across_partitions_warn_threshold=10; user_defined_function_fail_timeout=1500; user_defined_function_warn_timeout=500; user_function_timeout_policy=die; windows_timer_interval=1; write_request_timeout_in_ms=2000]
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,315 Config.java:555 - Node configuration:[allocate_tokens_for_keyspace=null; allow_extra_insecure_udfs=false; allow_insecure_udfs=false; authenticator=AllowAllAuthenticator; authorizer=AllowAllAuthorizer; auto_bootstrap=true; auto_snapshot=true; back_pressure_enabled=false; back_pressure_strategy=org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}; batch_size_fail_threshold_in_kb=50; batch_size_warn_threshold_in_kb=5; batchlog_replay_throttle_in_kb=1024; broadcast_address=null; broadcast_rpc_address=null; buffer_pool_use_heap_if_exhausted=true; cache_load_timeout_seconds=30; cas_contention_timeout_in_ms=1000; cdc_enabled=false; cdc_free_space_check_interval_ms=250; cdc_raw_directory=null; cdc_total_space_in_mb=0; check_for_duplicate_rows_during_compaction=true; check_for_duplicate_rows_during_reads=true; client_encryption_options=<REDACTED>; cluster_name=Test Cluster; column_index_cache_size_in_kb=2; column_index_size_in_kb=64; commit_failure_policy=stop; commitlog_compression=null; commitlog_directory=null; commitlog_max_compression_buffers_in_pool=3; commitlog_periodic_queue_size=-1; commitlog_segment_size_in_mb=32; commitlog_sync=periodic; commitlog_sync_batch_window_in_ms=NaN; commitlog_sync_period_in_ms=10000; commitlog_total_space_in_mb=null; compaction_large_partition_warning_threshold_mb=100; compaction_throughput_mb_per_sec=16; concurrent_compactors=null; concurrent_counter_writes=32; concurrent_materialized_view_writes=32; concurrent_reads=32; concurrent_replicates=null; concurrent_writes=32; counter_cache_keys_to_save=2147483647; counter_cache_save_period=7200; counter_cache_size_in_mb=null; counter_write_request_timeout_in_ms=5000; credentials_cache_max_entries=1000; credentials_update_interval_in_ms=-1; credentials_validity_in_ms=2000; cross_node_timeout=false; data_file_directories=[Ljava.lang.String;@38c5cc4c; disk_access_mode=auto; disk_failure_policy=stop; disk_optimization_estimate_percentile=0.95; disk_optimization_page_cross_chance=0.1; disk_optimization_strategy=ssd; dynamic_snitch=true; dynamic_snitch_badness_threshold=0.1; dynamic_snitch_reset_interval_in_ms=600000; dynamic_snitch_update_interval_in_ms=100; enable_drop_compact_storage=false; enable_materialized_views=true; enable_sasi_indexes=true; enable_scripted_user_defined_functions=false; enable_user_defined_functions=false; enable_user_defined_functions_threads=true; encryption_options=<REDACTED>; endpoint_snitch=SimpleSnitch; file_cache_round_up=null; file_cache_size_in_mb=null; force_new_prepared_statement_behaviour=false; gc_log_threshold_in_ms=200; gc_warn_threshold_in_ms=1000; hinted_handoff_disabled_datacenters=[]; hinted_handoff_enabled=true; hinted_handoff_throttle_in_kb=1024; hints_compression=null; hints_directory=null; hints_flush_period_in_ms=10000; incremental_backups=false; index_interval=null; index_summary_capacity_in_mb=null; index_summary_resize_interval_in_minutes=60; initial_token=null; inter_dc_stream_throughput_outbound_megabits_per_sec=200; inter_dc_tcp_nodelay=false; internode_authenticator=null; internode_compression=dc; internode_recv_buff_size_in_bytes=0; internode_send_buff_size_in_bytes=0; key_cache_keys_to_save=2147483647; key_cache_save_period=14400; key_cache_size_in_mb=null; listen_address=localhost; listen_interface=null; listen_interface_prefer_ipv6=false; listen_on_broadcast_address=false; max_hint_window_in_ms=10800000; max_hints_delivery_threads=2; max_hints_file_size_in_mb=128; max_mutation_size_in_kb=null; max_streaming_retries=3; max_value_size_in_mb=256; memtable_allocation_type=heap_buffers; memtable_cleanup_threshold=null; memtable_flush_writers=0; memtable_heap_space_in_mb=null; memtable_offheap_space_in_mb=null; min_free_space_per_drive_in_mb=50; native_transport_flush_in_batches_legacy=true; native_transport_max_concurrent_connections=-1; native_transport_max_concurrent_connections_per_ip=-1; native_transport_max_concurrent_requests_in_bytes=-1; native_transport_max_concurrent_requests_in_bytes_per_ip=-1; native_transport_max_frame_size_in_mb=256; native_transport_max_negotiable_protocol_version=-2147483648; native_transport_max_threads=128; native_transport_port=9042; native_transport_port_ssl=null; num_tokens=256; otc_backlog_expiration_interval_ms=200; otc_coalescing_enough_coalesced_messages=8; otc_coalescing_strategy=DISABLED; otc_coalescing_window_us=200; partitioner=org.apache.cassandra.dht.Murmur3Partitioner; permissions_cache_max_entries=1000; permissions_update_interval_in_ms=-1; permissions_validity_in_ms=2000; phi_convict_threshold=8.0; prepared_statements_cache_size_mb=null; range_request_timeout_in_ms=10000; read_request_timeout_in_ms=5000; repair_session_max_tree_depth=18; request_scheduler=org.apache.cassandra.scheduler.NoScheduler; request_scheduler_id=null; request_scheduler_options=null; request_timeout_in_ms=10000; role_manager=CassandraRoleManager; roles_cache_max_entries=1000; roles_update_interval_in_ms=-1; roles_validity_in_ms=2000; row_cache_class_name=org.apache.cassandra.cache.OHCProvider; row_cache_keys_to_save=2147483647; row_cache_save_period=0; row_cache_size_in_mb=0; rpc_address=localhost; rpc_interface=null; rpc_interface_prefer_ipv6=false; rpc_keepalive=true; rpc_listen_backlog=50; rpc_max_threads=2147483647; rpc_min_threads=16; rpc_port=9160; rpc_recv_buff_size_in_bytes=null; rpc_send_buff_size_in_bytes=null; rpc_server_type=sync; saved_caches_directory=null; seed_provider=org.apache.cassandra.locator.SimpleSeedProvider{seeds=127.0.0.1}; server_encryption_options=<REDACTED>; slow_query_log_timeout_in_ms=500; snapshot_before_compaction=false; snapshot_on_duplicate_row_detection=false; ssl_storage_port=7001; sstable_preemptive_open_interval_in_mb=50; start_native_transport=true; start_rpc=false; storage_port=7000; stream_throughput_outbound_megabits_per_sec=200; streaming_keep_alive_period_in_secs=300; streaming_socket_timeout_in_ms=86400000; thrift_framed_transport_size_in_mb=15; thrift_max_message_length_in_mb=16; thrift_prepared_statements_cache_size_mb=null; tombstone_failure_threshold=100000; tombstone_warn_threshold=1000; tracetype_query_ttl=86400; tracetype_repair_ttl=604800; transparent_data_encryption_options=org.apache.cassandra.config.TransparentDataEncryptionOptions@37918c79; trickle_fsync=false; trickle_fsync_interval_in_kb=10240; truncate_request_timeout_in_ms=60000; unlogged_batch_across_partitions_warn_threshold=10; user_defined_function_fail_timeout=1500; user_defined_function_warn_timeout=500; user_function_timeout_policy=die; windows_timer_interval=1; write_request_timeout_in_ms=2000]
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,315 DatabaseDescriptor.java:381 - DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,316 DatabaseDescriptor.java:439 - Global memtable on-heap threshold is enabled at 1996MB
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,316 DatabaseDescriptor.java:443 - Global memtable off-heap threshold is enabled at 1996MB
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,032 DatabaseDescriptor.java:381 - DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,032 DatabaseDescriptor.java:439 - Global memtable on-heap threshold is enabled at 1996MB
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,032 DatabaseDescriptor.java:443 - Global memtable off-heap threshold is enabled at 1996MB
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,473 RateBasedBackPressure.java:123 - Initialized back-pressure with high ratio: 0.9, factor: 5, flow: FAST, window size: 2000.
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,473 DatabaseDescriptor.java:781 - Back-pressure is disabled with strategy org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}.
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,191 RateBasedBackPressure.java:123 - Initialized back-pressure with high ratio: 0.9, factor: 5, flow: FAST, window size: 2000.
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,191 DatabaseDescriptor.java:781 - Back-pressure is disabled with strategy org.apache.cassandra.net.RateBasedBackPressure{high_ratio=0.9, factor=5, flow=FAST}.
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:33,048 SigarLibrary.java:180 - Checked OS settings and found them configured for optimal performance.
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,055 StartupChecks.java:332 - Directory /opt/cassandra/data/data doesn't exist
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,059 StartupChecks.java:332 - Directory /opt/cassandra/data/commitlog doesn't exist
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,060 StartupChecks.java:332 - Directory /opt/cassandra/data/saved_caches doesn't exist
+cassandra_a  | WARN  [main] 2025-07-06 21:11:33,060 StartupChecks.java:332 - Directory /opt/cassandra/data/hints doesn't exist
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,557 JMXServerUtils.java:256 - Configured JMX server at: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:7199/jmxrmi
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,562 CassandraDaemon.java:490 - Hostname: e3884a23e118
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,563 CassandraDaemon.java:497 - JVM vendor/version: OpenJDK 64-Bit Server VM/1.8.0_452
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,567 CassandraDaemon.java:498 - Heap size: 7.800GiB/7.800GiB
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,567 CassandraDaemon.java:503 - Code Cache Non-heap memory: init = 2555904(2496K) used = 7628416(7449K) committed = 7667712(7488K) max = 251658240(245760K)
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,568 CassandraDaemon.java:503 - Metaspace Non-heap memory: init = 0(0K) used = 19700600(19238K) committed = 20316160(19840K) max = -1(-1K)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,568 CassandraDaemon.java:503 - Compressed Class Space Non-heap memory: init = 0(0K) used = 2335336(2280K) committed = 2490368(2432K) max = 1073741824(1048576K)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,568 CassandraDaemon.java:503 - Par Eden Space Heap memory: init = 1718091776(1677824K) used = 377980624(369121K) committed = 1718091776(1677824K) max = 1718091776(1677824K)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,568 CassandraDaemon.java:503 - Par Survivor Space Heap memory: init = 214695936(209664K) used = 0(0K) committed = 214695936(209664K) max = 214695936(209664K)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,569 CassandraDaemon.java:503 - CMS Old Gen Heap memory: init = 6442450944(6291456K) used = 0(0K) committed = 6442450944(6291456K) max = 6442450944(6291456K)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,569 CassandraDaemon.java:505 - Classpath: /etc/cassandra:/opt/cassandra/build/classes/main:/opt/cassandra/build/classes/thrift:/opt/cassandra/lib/HdrHistogram-2.1.9.jar:/opt/cassandra/lib/ST4-4.0.8.jar:/opt/cassandra/lib/airline-0.6.jar:/opt/cassandra/lib/antlr-runtime-3.5.2.jar:/opt/cassandra/lib/apache-cassandra-3.11.19.jar:/opt/cassandra/lib/apache-cassandra-thrift-3.11.19.jar:/opt/cassandra/lib/asm-5.0.4.jar:/opt/cassandra/lib/caffeine-2.2.6.jar:/opt/cassandra/lib/cassandra-driver-core-3.0.1-shaded.jar:/opt/cassandra/lib/commons-cli-1.1.jar:/opt/cassandra/lib/commons-codec-1.9.jar:/opt/cassandra/lib/commons-lang3-3.1.jar:/opt/cassandra/lib/commons-math3-3.2.jar:/opt/cassandra/lib/compress-lzf-0.8.4.jar:/opt/cassandra/lib/concurrent-trees-2.4.0.jar:/opt/cassandra/lib/concurrentlinkedhashmap-lru-1.4.jar:/opt/cassandra/lib/disruptor-3.0.1.jar:/opt/cassandra/lib/ecj-4.4.2.jar:/opt/cassandra/lib/guava-18.0.jar:/opt/cassandra/lib/high-scale-lib-1.0.6.jar:/opt/cassandra/lib/hppc-0.5.4.jar:/opt/cassandra/lib/jackson-annotations-2.13.2.jar:/opt/cassandra/lib/jackson-core-2.13.2.jar:/opt/cassandra/lib/jackson-databind-2.13.2.2.jar:/opt/cassandra/lib/jamm-0.3.0.jar:/opt/cassandra/lib/javax.inject-1.jar:/opt/cassandra/lib/jbcrypt-0.4.jar:/opt/cassandra/lib/jcl-over-slf4j-1.7.25.jar:/opt/cassandra/lib/jctools-core-1.2.1.jar:/opt/cassandra/lib/jna-4.2.2.jar:/opt/cassandra/lib/joda-time-2.4.jar:/opt/cassandra/lib/json-simple-1.1.jar:/opt/cassandra/lib/libthrift-0.9.2.jar:/opt/cassandra/lib/log4j-over-slf4j-1.7.25.jar:/opt/cassandra/lib/logback-classic-1.2.9.jar:/opt/cassandra/lib/logback-core-1.2.9.jar:/opt/cassandra/lib/lz4-1.3.0.jar:/opt/cassandra/lib/metrics-core-3.1.5.jar:/opt/cassandra/lib/metrics-jvm-3.1.5.jar:/opt/cassandra/lib/metrics-logback-3.1.5.jar:/opt/cassandra/lib/netty-all-4.0.44.Final.jar:/opt/cassandra/lib/ohc-core-0.4.4.jar:/opt/cassandra/lib/ohc-core-j8-0.4.4.jar:/opt/cassandra/lib/reporter-config-base-3.0.3.jar:/opt/cassandra/lib/reporter-config3-3.0.3.jar:/opt/cassandra/lib/sigar-1.6.4.jar:/opt/cassandra/lib/slf4j-api-1.7.25.jar:/opt/cassandra/lib/snakeyaml-1.26.jar:/opt/cassandra/lib/snappy-java-1.1.10.4.jar:/opt/cassandra/lib/snowball-stemmer-1.3.0.581.1.jar:/opt/cassandra/lib/stream-2.5.2.jar:/opt/cassandra/lib/thrift-server-0.3.7.jar:/opt/cassandra/lib/jsr223/*/*.jar::/opt/cassandra/lib/jamm-0.3.0.jar
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,569 CassandraDaemon.java:507 - JVM Arguments: [-Xloggc:/opt/cassandra/logs/gc.log, -ea, -XX:+UseThreadPriorities, -XX:ThreadPriorityPolicy=42, -XX:+HeapDumpOnOutOfMemoryError, -Xss256k, -XX:StringTableSize=1000003, -XX:+AlwaysPreTouch, -XX:-UseBiasedLocking, -XX:+UseTLAB, -XX:+ResizeTLAB, -XX:+UseNUMA, -XX:+PerfDisableSharedMem, -Djava.net.preferIPv4Stack=true, -XX:+UseParNewGC, -XX:+UseConcMarkSweepGC, -XX:+CMSParallelRemarkEnabled, -XX:SurvivorRatio=8, -XX:MaxTenuringThreshold=1, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:CMSWaitDuration=10000, -XX:+CMSParallelInitialMarkEnabled, -XX:+CMSEdenChunksRecordAlways, -XX:+CMSClassUnloadingEnabled, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintHeapAtGC, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -XX:+PrintPromotionFailure, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=10M, -Xms8192M, -Xmx8192M, -Xmn2048M, -XX:+UseCondCardMark, -XX:CompileCommandFile=/etc/cassandra/hotspot_compiler, -javaagent:/opt/cassandra/lib/jamm-0.3.0.jar, -Dcassandra.jmx.local.port=7199, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.password.file=/etc/cassandra/jmxremote.password, -Djava.library.path=/opt/cassandra/lib/sigar-bin, -Dcassandra.libjemalloc=/usr/local/lib/libjemalloc.so, -XX:OnOutOfMemoryError=kill -9 %p, -Dlogback.configurationFile=logback.xml, -Dcassandra.logdir=/opt/cassandra/logs, -Dcassandra.storagedir=/opt/cassandra/data]
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,616 NativeLibrary.java:189 - Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out, especially with mmapped I/O enabled. Increase RLIMIT_MEMLOCK or run Cassandra as root.
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,616 StartupChecks.java:140 - jemalloc seems to be preloaded from /usr/local/lib/libjemalloc.so
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,617 StartupChecks.java:169 - JMX is not enabled to receive remote connections. Please see cassandra-env.sh for more info.
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:33,113 QueryProcessor.java:121 - Initialized prepared statement caches with 31 MB (native) and 31 MB (Thrift)
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,621 SigarLibrary.java:44 - Initializing SIGAR library
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,268 JMXServerUtils.java:256 - Configured JMX server at: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:7199/jmxrmi
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,272 CassandraDaemon.java:490 - Hostname: 869217035dba
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,272 CassandraDaemon.java:497 - JVM vendor/version: OpenJDK 64-Bit Server VM/1.8.0_452
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,275 CassandraDaemon.java:498 - Heap size: 7.800GiB/7.800GiB
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,276 CassandraDaemon.java:503 - Code Cache Non-heap memory: init = 2555904(2496K) used = 7624320(7445K) committed = 7667712(7488K) max = 251658240(245760K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,276 CassandraDaemon.java:503 - Metaspace Non-heap memory: init = 0(0K) used = 19702896(19241K) committed = 20316160(19840K) max = -1(-1K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,276 CassandraDaemon.java:503 - Compressed Class Space Non-heap memory: init = 0(0K) used = 2335360(2280K) committed = 2490368(2432K) max = 1073741824(1048576K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,276 CassandraDaemon.java:503 - Par Eden Space Heap memory: init = 1718091776(1677824K) used = 377980560(369121K) committed = 1718091776(1677824K) max = 1718091776(1677824K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,276 CassandraDaemon.java:503 - Par Survivor Space Heap memory: init = 214695936(209664K) used = 0(0K) committed = 214695936(209664K) max = 214695936(209664K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,277 CassandraDaemon.java:503 - CMS Old Gen Heap memory: init = 6442450944(6291456K) used = 0(0K) committed = 6442450944(6291456K) max = 6442450944(6291456K)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,277 CassandraDaemon.java:505 - Classpath: /etc/cassandra:/opt/cassandra/build/classes/main:/opt/cassandra/build/classes/thrift:/opt/cassandra/lib/HdrHistogram-2.1.9.jar:/opt/cassandra/lib/ST4-4.0.8.jar:/opt/cassandra/lib/airline-0.6.jar:/opt/cassandra/lib/antlr-runtime-3.5.2.jar:/opt/cassandra/lib/apache-cassandra-3.11.19.jar:/opt/cassandra/lib/apache-cassandra-thrift-3.11.19.jar:/opt/cassandra/lib/asm-5.0.4.jar:/opt/cassandra/lib/caffeine-2.2.6.jar:/opt/cassandra/lib/cassandra-driver-core-3.0.1-shaded.jar:/opt/cassandra/lib/commons-cli-1.1.jar:/opt/cassandra/lib/commons-codec-1.9.jar:/opt/cassandra/lib/commons-lang3-3.1.jar:/opt/cassandra/lib/commons-math3-3.2.jar:/opt/cassandra/lib/compress-lzf-0.8.4.jar:/opt/cassandra/lib/concurrent-trees-2.4.0.jar:/opt/cassandra/lib/concurrentlinkedhashmap-lru-1.4.jar:/opt/cassandra/lib/disruptor-3.0.1.jar:/opt/cassandra/lib/ecj-4.4.2.jar:/opt/cassandra/lib/guava-18.0.jar:/opt/cassandra/lib/high-scale-lib-1.0.6.jar:/opt/cassandra/lib/hppc-0.5.4.jar:/opt/cassandra/lib/jackson-annotations-2.13.2.jar:/opt/cassandra/lib/jackson-core-2.13.2.jar:/opt/cassandra/lib/jackson-databind-2.13.2.2.jar:/opt/cassandra/lib/jamm-0.3.0.jar:/opt/cassandra/lib/javax.inject-1.jar:/opt/cassandra/lib/jbcrypt-0.4.jar:/opt/cassandra/lib/jcl-over-slf4j-1.7.25.jar:/opt/cassandra/lib/jctools-core-1.2.1.jar:/opt/cassandra/lib/jna-4.2.2.jar:/opt/cassandra/lib/joda-time-2.4.jar:/opt/cassandra/lib/json-simple-1.1.jar:/opt/cassandra/lib/libthrift-0.9.2.jar:/opt/cassandra/lib/log4j-over-slf4j-1.7.25.jar:/opt/cassandra/lib/logback-classic-1.2.9.jar:/opt/cassandra/lib/logback-core-1.2.9.jar:/opt/cassandra/lib/lz4-1.3.0.jar:/opt/cassandra/lib/metrics-core-3.1.5.jar:/opt/cassandra/lib/metrics-jvm-3.1.5.jar:/opt/cassandra/lib/metrics-logback-3.1.5.jar:/opt/cassandra/lib/netty-all-4.0.44.Final.jar:/opt/cassandra/lib/ohc-core-0.4.4.jar:/opt/cassandra/lib/ohc-core-j8-0.4.4.jar:/opt/cassandra/lib/reporter-config-base-3.0.3.jar:/opt/cassandra/lib/reporter-config3-3.0.3.jar:/opt/cassandra/lib/sigar-1.6.4.jar:/opt/cassandra/lib/slf4j-api-1.7.25.jar:/opt/cassandra/lib/snakeyaml-1.26.jar:/opt/cassandra/lib/snappy-java-1.1.10.4.jar:/opt/cassandra/lib/snowball-stemmer-1.3.0.581.1.jar:/opt/cassandra/lib/stream-2.5.2.jar:/opt/cassandra/lib/thrift-server-0.3.7.jar:/opt/cassandra/lib/jsr223/*/*.jar::/opt/cassandra/lib/jamm-0.3.0.jar
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,277 CassandraDaemon.java:507 - JVM Arguments: [-Xloggc:/opt/cassandra/logs/gc.log, -ea, -XX:+UseThreadPriorities, -XX:ThreadPriorityPolicy=42, -XX:+HeapDumpOnOutOfMemoryError, -Xss256k, -XX:StringTableSize=1000003, -XX:+AlwaysPreTouch, -XX:-UseBiasedLocking, -XX:+UseTLAB, -XX:+ResizeTLAB, -XX:+UseNUMA, -XX:+PerfDisableSharedMem, -Djava.net.preferIPv4Stack=true, -XX:+UseParNewGC, -XX:+UseConcMarkSweepGC, -XX:+CMSParallelRemarkEnabled, -XX:SurvivorRatio=8, -XX:MaxTenuringThreshold=1, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:CMSWaitDuration=10000, -XX:+CMSParallelInitialMarkEnabled, -XX:+CMSEdenChunksRecordAlways, -XX:+CMSClassUnloadingEnabled, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintHeapAtGC, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -XX:+PrintPromotionFailure, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=10M, -Xms8192M, -Xmx8192M, -Xmn2048M, -XX:+UseCondCardMark, -XX:CompileCommandFile=/etc/cassandra/hotspot_compiler, -javaagent:/opt/cassandra/lib/jamm-0.3.0.jar, -Dcassandra.jmx.local.port=7199, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.password.file=/etc/cassandra/jmxremote.password, -Djava.library.path=/opt/cassandra/lib/sigar-bin, -Dcassandra.libjemalloc=/usr/local/lib/libjemalloc.so, -XX:OnOutOfMemoryError=kill -9 %p, -Dlogback.configurationFile=logback.xml, -Dcassandra.logdir=/opt/cassandra/logs, -Dcassandra.storagedir=/opt/cassandra/data]
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,633 SigarLibrary.java:180 - Checked OS settings and found them configured for optimal performance.
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,643 StartupChecks.java:332 - Directory /opt/cassandra/data/data doesn't exist
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,647 StartupChecks.java:332 - Directory /opt/cassandra/data/commitlog doesn't exist
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,648 StartupChecks.java:332 - Directory /opt/cassandra/data/saved_caches doesn't exist
+cassandra_c  | WARN  [main] 2025-07-06 21:11:33,648 StartupChecks.java:332 - Directory /opt/cassandra/data/hints doesn't exist
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:33,721 QueryProcessor.java:121 - Initialized prepared statement caches with 31 MB (native) and 31 MB (Thrift)
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,320 NativeLibrary.java:189 - Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out, especially with mmapped I/O enabled. Increase RLIMIT_MEMLOCK or run Cassandra as root.
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,321 StartupChecks.java:140 - jemalloc seems to be preloaded from /usr/local/lib/libjemalloc.so
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,321 StartupChecks.java:169 - JMX is not enabled to receive remote connections. Please see cassandra-env.sh for more info.
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,323 SigarLibrary.java:44 - Initializing SIGAR library
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,336 SigarLibrary.java:180 - Checked OS settings and found them configured for optimal performance.
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,345 StartupChecks.java:332 - Directory /opt/cassandra/data/data doesn't exist
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,348 StartupChecks.java:332 - Directory /opt/cassandra/data/commitlog doesn't exist
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,349 StartupChecks.java:332 - Directory /opt/cassandra/data/saved_caches doesn't exist
+cassandra_b  | WARN  [main] 2025-07-06 21:11:33,350 StartupChecks.java:332 - Directory /opt/cassandra/data/hints doesn't exist
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,178 ColumnFamilyStore.java:432 - Initializing system.IndexInfo
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,404 QueryProcessor.java:121 - Initialized prepared statement caches with 31 MB (native) and 31 MB (Thrift)
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:33,507 ColumnFamilyStore.java:432 - Initializing system.IndexInfo
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,096 ColumnFamilyStore.java:432 - Initializing system.batches
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,102 ColumnFamilyStore.java:432 - Initializing system.paxos
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,111 ColumnFamilyStore.java:432 - Initializing system.local
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,116 ColumnFamilyStore.java:432 - Initializing system.peers
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,122 ColumnFamilyStore.java:432 - Initializing system.peer_events
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,127 ColumnFamilyStore.java:432 - Initializing system.range_xfers
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,131 ColumnFamilyStore.java:432 - Initializing system.compaction_history
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,136 ColumnFamilyStore.java:432 - Initializing system.sstable_activity
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,818 ColumnFamilyStore.java:432 - Initializing system.batches
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:33,819 ColumnFamilyStore.java:432 - Initializing system.IndexInfo
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,828 ColumnFamilyStore.java:432 - Initializing system.paxos
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,837 ColumnFamilyStore.java:432 - Initializing system.local
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,842 ColumnFamilyStore.java:432 - Initializing system.peers
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,848 ColumnFamilyStore.java:432 - Initializing system.peer_events
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,853 ColumnFamilyStore.java:432 - Initializing system.range_xfers
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,858 ColumnFamilyStore.java:432 - Initializing system.compaction_history
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,862 ColumnFamilyStore.java:432 - Initializing system.sstable_activity
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,141 ColumnFamilyStore.java:432 - Initializing system.size_estimates
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,146 ColumnFamilyStore.java:432 - Initializing system.available_ranges
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,150 ColumnFamilyStore.java:432 - Initializing system.transferred_ranges
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,154 ColumnFamilyStore.java:432 - Initializing system.views_builds_in_progress
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,159 ColumnFamilyStore.java:432 - Initializing system.built_views
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,164 ColumnFamilyStore.java:432 - Initializing system.hints
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,168 ColumnFamilyStore.java:432 - Initializing system.batchlog
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,173 ColumnFamilyStore.java:432 - Initializing system.prepared_statements
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,176 ColumnFamilyStore.java:432 - Initializing system.schema_keyspaces
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,181 ColumnFamilyStore.java:432 - Initializing system.schema_columnfamilies
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,423 ColumnFamilyStore.java:432 - Initializing system.batches
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,429 ColumnFamilyStore.java:432 - Initializing system.paxos
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,440 ColumnFamilyStore.java:432 - Initializing system.local
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,446 ColumnFamilyStore.java:432 - Initializing system.peers
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,451 ColumnFamilyStore.java:432 - Initializing system.peer_events
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,456 ColumnFamilyStore.java:432 - Initializing system.range_xfers
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,461 ColumnFamilyStore.java:432 - Initializing system.compaction_history
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,466 ColumnFamilyStore.java:432 - Initializing system.sstable_activity
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,471 ColumnFamilyStore.java:432 - Initializing system.size_estimates
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,868 ColumnFamilyStore.java:432 - Initializing system.size_estimates
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,872 ColumnFamilyStore.java:432 - Initializing system.available_ranges
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,877 ColumnFamilyStore.java:432 - Initializing system.transferred_ranges
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,881 ColumnFamilyStore.java:432 - Initializing system.views_builds_in_progress
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,885 ColumnFamilyStore.java:432 - Initializing system.built_views
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,890 ColumnFamilyStore.java:432 - Initializing system.hints
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,895 ColumnFamilyStore.java:432 - Initializing system.batchlog
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,899 ColumnFamilyStore.java:432 - Initializing system.prepared_statements
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,902 ColumnFamilyStore.java:432 - Initializing system.schema_keyspaces
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,189 ColumnFamilyStore.java:432 - Initializing system.schema_columns
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,194 ColumnFamilyStore.java:432 - Initializing system.schema_triggers
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,198 ColumnFamilyStore.java:432 - Initializing system.schema_usertypes
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,202 ColumnFamilyStore.java:432 - Initializing system.schema_functions
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,206 ColumnFamilyStore.java:432 - Initializing system.schema_aggregates
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,210 ViewManager.java:137 - Not submitting build tasks for views in keyspace system as storage service is not initialized
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,280 ApproximateTime.java:44 - Scheduling approximate time-check task with a precision of 10 milliseconds
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,300 ColumnFamilyStore.java:432 - Initializing system_schema.keyspaces
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,907 ColumnFamilyStore.java:432 - Initializing system.schema_columnfamilies
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,911 ColumnFamilyStore.java:432 - Initializing system.schema_columns
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,914 ColumnFamilyStore.java:432 - Initializing system.schema_triggers
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,918 ColumnFamilyStore.java:432 - Initializing system.schema_usertypes
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,923 ColumnFamilyStore.java:432 - Initializing system.schema_functions
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,927 ColumnFamilyStore.java:432 - Initializing system.schema_aggregates
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,304 ColumnFamilyStore.java:432 - Initializing system_schema.tables
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,308 ColumnFamilyStore.java:432 - Initializing system_schema.columns
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,312 ColumnFamilyStore.java:432 - Initializing system_schema.triggers
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,316 ColumnFamilyStore.java:432 - Initializing system_schema.dropped_columns
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:34,933 ViewManager.java:137 - Not submitting build tasks for views in keyspace system as storage service is not initialized
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,006 ApproximateTime.java:44 - Scheduling approximate time-check task with a precision of 10 milliseconds
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,476 ColumnFamilyStore.java:432 - Initializing system.available_ranges
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,480 ColumnFamilyStore.java:432 - Initializing system.transferred_ranges
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,484 ColumnFamilyStore.java:432 - Initializing system.views_builds_in_progress
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,489 ColumnFamilyStore.java:432 - Initializing system.built_views
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,493 ColumnFamilyStore.java:432 - Initializing system.hints
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,027 ColumnFamilyStore.java:432 - Initializing system_schema.keyspaces
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,032 ColumnFamilyStore.java:432 - Initializing system_schema.tables
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,039 ColumnFamilyStore.java:432 - Initializing system_schema.columns
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,043 ColumnFamilyStore.java:432 - Initializing system_schema.triggers
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,498 ColumnFamilyStore.java:432 - Initializing system.batchlog
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,502 ColumnFamilyStore.java:432 - Initializing system.prepared_statements
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,506 ColumnFamilyStore.java:432 - Initializing system.schema_keyspaces
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,510 ColumnFamilyStore.java:432 - Initializing system.schema_columnfamilies
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,514 ColumnFamilyStore.java:432 - Initializing system.schema_columns
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,047 ColumnFamilyStore.java:432 - Initializing system_schema.dropped_columns
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,051 ColumnFamilyStore.java:432 - Initializing system_schema.views
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,055 ColumnFamilyStore.java:432 - Initializing system_schema.types
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,320 ColumnFamilyStore.java:432 - Initializing system_schema.views
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,324 ColumnFamilyStore.java:432 - Initializing system_schema.types
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,328 ColumnFamilyStore.java:432 - Initializing system_schema.functions
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,059 ColumnFamilyStore.java:432 - Initializing system_schema.functions
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,518 ColumnFamilyStore.java:432 - Initializing system.schema_triggers
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,063 ColumnFamilyStore.java:432 - Initializing system_schema.aggregates
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,068 ColumnFamilyStore.java:432 - Initializing system_schema.indexes
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,332 ColumnFamilyStore.java:432 - Initializing system_schema.aggregates
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,071 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_schema as storage service is not initialized
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,336 ColumnFamilyStore.java:432 - Initializing system_schema.indexes
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,340 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_schema as storage service is not initialized
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,522 ColumnFamilyStore.java:432 - Initializing system.schema_usertypes
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,526 ColumnFamilyStore.java:432 - Initializing system.schema_functions
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,530 ColumnFamilyStore.java:432 - Initializing system.schema_aggregates
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,533 ViewManager.java:137 - Not submitting build tasks for views in keyspace system as storage service is not initialized
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,607 ApproximateTime.java:44 - Scheduling approximate time-check task with a precision of 10 milliseconds
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | WARN  [main] 2025-07-06 21:11:35,140 SystemKeyspace.java:1197 - No host ID found, created 80dead2f-d8cf-4e63-9953-5adc8b02257e (Note: This should happen exactly once per node).
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,628 ColumnFamilyStore.java:432 - Initializing system_schema.keyspaces
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,632 ColumnFamilyStore.java:432 - Initializing system_schema.tables
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | WARN  [main] 2025-07-06 21:11:34,406 SystemKeyspace.java:1197 - No host ID found, created bba19ec4-f9d1-470d-a220-30f2f297228e (Note: This should happen exactly once per node).
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,636 ColumnFamilyStore.java:432 - Initializing system_schema.columns
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,640 ColumnFamilyStore.java:432 - Initializing system_schema.triggers
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,644 ColumnFamilyStore.java:432 - Initializing system_schema.dropped_columns
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,648 ColumnFamilyStore.java:432 - Initializing system_schema.views
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:35,445 CacheService.java:103 - Initializing key cache with capacity of 100 MBs.
+cassandra_c  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:35,455 CacheService.java:125 - Initializing row cache with capacity of 0 MBs
+cassandra_c  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:35,457 CacheService.java:154 - Initializing counter cache with capacity of 50 MBs
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,653 ColumnFamilyStore.java:432 - Initializing system_schema.types
+cassandra_c  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:35,461 CacheService.java:165 - Scheduling counter cache save to every 7200 seconds (going to save all keys).
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,660 ColumnFamilyStore.java:432 - Initializing system_schema.functions
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,664 ColumnFamilyStore.java:432 - Initializing system_schema.aggregates
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,668 ColumnFamilyStore.java:432 - Initializing system_schema.indexes
+cassandra_b  | INFO  [main] 2025-07-06 21:11:34,672 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_schema as storage service is not initialized
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [MemtableFlushWriter:2] 2025-07-06 21:11:35,532 BufferPool.java:251 - Global buffer pool is enabled, when pool is exhausted (max is 512.000MiB) it will allocate on heap
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | WARN  [main] 2025-07-06 21:11:34,738 SystemKeyspace.java:1197 - No host ID found, created 0fbd9bd9-49d5-40f3-8a98-5ddae6b48554 (Note: This should happen exactly once per node).
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,688 StorageService.java:773 - Populating token metadata from system tables
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,713 StorageService.java:780 - Token metadata: 
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [pool-4-thread-1] 2025-07-06 21:11:35,741 AutoSavingCache.java:174 - Completed loading (1 ms; 2 keys) KeyCache cache
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,757 CommitLog.java:164 - No commitlog files found; skipping replay
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,758 StorageService.java:773 - Populating token metadata from system tables
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,771 StorageService.java:780 - Token metadata: 
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,851 QueryProcessor.java:174 - Preloaded 0 prepared statements
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,852 StorageService.java:791 - Cassandra version: 3.11.19
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,852 StorageService.java:792 - Thrift API version: 20.1.0
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,853 StorageService.java:793 - CQL supported versions: 3.4.4 (default: 3.4.4)
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,853 StorageService.java:795 - Native protocol supported versions: 3/v3, 4/v4, 5/v5-beta (default: 4/v4)
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,652 CacheService.java:103 - Initializing key cache with capacity of 100 MBs.
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,659 CacheService.java:125 - Initializing row cache with capacity of 0 MBs
+cassandra_a  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,660 CacheService.java:154 - Initializing counter cache with capacity of 50 MBs
+cassandra_a  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,662 CacheService.java:165 - Scheduling counter cache save to every 7200 seconds (going to save all keys).
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,977 CacheService.java:103 - Initializing key cache with capacity of 100 MBs.
+cassandra_b  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,984 CacheService.java:125 - Initializing row cache with capacity of 0 MBs
+cassandra_b  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,985 CacheService.java:154 - Initializing counter cache with capacity of 50 MBs
+cassandra_b  | INFO  [MemtableFlushWriter:1] 2025-07-06 21:11:34,986 CacheService.java:165 - Scheduling counter cache save to every 7200 seconds (going to save all keys).
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MemtableFlushWriter:2] 2025-07-06 21:11:34,722 BufferPool.java:251 - Global buffer pool is enabled, when pool is exhausted (max is 512.000MiB) it will allocate on heap
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,890 IndexSummaryManager.java:87 - Initializing index summary manager with a memory pool size of 399 MB and a resize interval of 60 minutes
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,903 MessagingService.java:750 - Starting Messaging Service on localhost/127.0.0.1:7000 (lo)
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,924 StorageService.java:723 - Unable to gossip with any peers but continuing anyway since node is in its own seed list
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [MemtableFlushWriter:2] 2025-07-06 21:11:35,043 BufferPool.java:251 - Global buffer pool is enabled, when pool is exhausted (max is 512.000MiB) it will allocate on heap
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,947 StorageService.java:877 - Loading persisted ring state
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,947 StorageService.java:1008 - Starting up server gossip
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,850 StorageService.java:773 - Populating token metadata from system tables
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:35,998 StorageService.java:1091 - This node will not auto bootstrap because it is configured to be a seed node.
+cassandra_c  | INFO  [main] 2025-07-06 21:11:36,010 BootStrapper.java:228 - Generated random tokens. tokens are [-8762339131965615815, -5996557703502733869, 4200376186994218350, 1013538885414541583, 3549984854953962157, 9024721041237850414, -4892531011020467852, -1349864437792435626, 8666883752222214216, 5364633523177670785, -7439265236843681975, -3592694716550718298, -7233843923831141993, 8271926243258125913, 5282317973211662510, 5841045561914488348, -6489253046145057407, 3199821921172561065, -7925547861936235275, -2869293313990416932, -4966752999961674883, -4584405948046768835, -8011786099010338304, 8085695077649542605, 3148597976348045920, 343228557920373139, 4477752908422106772, -1385344343145149162, -8245044847288676222, -5052096233346126649, -6314276229592343463, 3384649483292062884, 4120955548091727731, 2342901851102574737, 6028829585118928143, -2618567782261765244, 1913573408407240581, -1932777408327968031, 4465480742968556367, -3523688685117564917, -7738329957489706963, 613895664746091095, -1309269031088364551, 2319566622520975342, 1695480870456177725, -2670431699695254364, 8750154129273668242, -2852463354499519094, -6431721624139657881, -8955648554596774187, -95989125963567080, 7890351601693631720, 3782389856768816440, -4680676798851274191, -4114344910747739909, -716021824931750884, 4247676755450690651, -116493081518250138, 791449883396903522, -6677674771921448459, 1134299373894023574, -1815341094542164219, 1949383533189138627, 6213616026136434937, -7766827181511537325, 2674285141611498615, 6608082090311346478, 6141471497545557263, -4383992167872958457, 8197342673800087769, -1483554630987507138, -5104103143042780854, -4175194215280946754, 4109964265811830352, 3328243628457731407, -1487629286570457994, -4869709452584611692, 5801016210756099532, -4111225111535706132, -6013342037089831115, -4425976375789447908, -4569521321823046783, 2995132746974864110, 8748124118569545986, 1981627273596121439, 1408634151874026141, 1069888320141518576, -3588916288389391666, 6867179917932245815, 7504682317502394559, -4696773314368845462, -6356506589423181666, -2056069367879949834, -9067715366126105139, -3464585171120211398, -1384086311437472535, 4851293058083766432, 4856469306610839965, -8440533871254915070, -1527608245563948201, 18977560912774043, 3796452534888928185, 5239516940142768478, 5637354197104799316, 6501314279936684228, 1693324611141120021, -9049696447376142672, 3658121080519779868, -2294675709634513690, -7383557286240720305, -7995545683797626479, 2859993070669741698, -4922430115995315495, -5501704076753654837, -1431622609796080456, -4783414104006105508, 966754107595678303, -2780821593483188152, -1384338746420600368, 481708670923329209, 1632941801690352917, -556745095516227416, -6863151461117122492, -7851329365518227511, -9127683494558919412, 8791753217308889246, -3198237329405704679, -7736755209409870204, 4589893138253569195, -8093541239835440367, 6447555820896287141, 6531701883877294247, 675053307399398603, -1940925343113194860, 7174501652214367512, 3318420750300032502, 7538948637422521660, 130320993801664725, -7203061604657565309, -4866269818586435089, -5668090414408174610, -3606665908155896245, -8253256273968652144, -4802933382524908165, 4666180827984603305, 7130380388393748828, -6948226126074326036, 3191711802363109612, 4979907369029905467, -1450074079658502586, -5473197860982943731, 4253202565298408822, -8490692329156956613, 5385254101259554125, 2781781575021938628, 6964867206183874061, -7130818808379175722, 702008713659867989, 8094036960282606171, 3630824351515042108, -9014293210524033354, -2711314019590579998, 6566969975311604578, -4762763637621538952, -8887896391694147537, 5841701080225428643, 1727891837847486458, -1712382558449354152, 129489200228738755, 7686265442069948856, -5135018673828213975, 9178082620879072044, 7021092050743416272, 8509958305375930862, 8041490799583021109, -1456122007735067322, 9102443040198212026, -7787481800190931755, -5790471300193640940, -4643260719594724581, 1954856261471834836, 8329961781608901509, 1477064513071544503, 6660223956775297859, -8341618162731902655, -8379252236132384951, -3776041602312625202, -1385564123108060691, 3355066342863489748, -1460910822197114370, 4772664018722382300, 4872414535950102033, 3746831379552556617, 9172486735162602617, 5220110604652251504, 3547119212809432350, -4537674959707038123, -1650320124324044809, 8845184990498960616, -7902185524574179977, 752016599252361561, -6289658373026761446, -1344821474082610727, 2052785911745364358, -2258114003676370185, -5134509205204643341, 4788672963154114304, 2994337019799582535, 7130698900487749223, 2944247639120583756, -2425753499538589524, 5233428136268504575, 7415148100041299833, 7802338302880451112, -7650901690379756426, -5548349851686803196, -5397693061794444451, 9125220480505342237, 3623438907107866874, -4555434680458670339, 1812406346919246243, 2638130924694223980, 3859780223307168451, 4198639707453741005, 7682715843737679418, 2665499626943414806, -6185628498828257657, 1449952192290686669, 7717626676964600266, -5960523174190545484, 7868233761716242654, -1331109413808988701, -5076710413360122691, 1781419121725421734, -3414695210171415541, 6053887354852847003, 4647451858696169762, -3226973503197212660, 6289475638591076321, 4747312849155062379, 5248282273432759085, -6166574288726247495, 3513360859921939290, -1048641417090683596, 5701633459366158500, 6158704784119794748, 1913408866237752938, -46560268930779459, 868482724070054994, -1454356170623811083, 1998454765687384626, -3827232522005278117, -3698973674561347995, -5319619248667463308, 3566250556606475245, 2783351861812796636]
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,872 StorageService.java:780 - Token metadata: 
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,175 StorageService.java:773 - Populating token metadata from system tables
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,200 StorageService.java:780 - Token metadata: 
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [pool-4-thread-1] 2025-07-06 21:11:35,219 AutoSavingCache.java:174 - Completed loading (0 ms; 2 keys) KeyCache cache
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,234 CommitLog.java:164 - No commitlog files found; skipping replay
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,234 StorageService.java:773 - Populating token metadata from system tables
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,244 StorageService.java:780 - Token metadata: 
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,308 QueryProcessor.java:174 - Preloaded 0 prepared statements
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [pool-4-thread-1] 2025-07-06 21:11:34,890 AutoSavingCache.java:174 - Completed loading (0 ms; 2 keys) KeyCache cache
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,905 CommitLog.java:164 - No commitlog files found; skipping replay
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,905 StorageService.java:773 - Populating token metadata from system tables
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,916 StorageService.java:780 - Token metadata: 
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,309 StorageService.java:791 - Cassandra version: 3.11.19
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,309 StorageService.java:792 - Thrift API version: 20.1.0
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,309 StorageService.java:793 - CQL supported versions: 3.4.4 (default: 3.4.4)
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,310 StorageService.java:795 - Native protocol supported versions: 3/v3, 4/v4, 5/v5-beta (default: 4/v4)
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,979 QueryProcessor.java:174 - Preloaded 0 prepared statements
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,339 IndexSummaryManager.java:87 - Initializing index summary manager with a memory pool size of 399 MB and a resize interval of 60 minutes
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,350 MessagingService.java:750 - Starting Messaging Service on localhost/127.0.0.1:7000 (lo)
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,365 StorageService.java:723 - Unable to gossip with any peers but continuing anyway since node is in its own seed list
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,384 StorageService.java:877 - Loading persisted ring state
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,384 StorageService.java:1008 - Starting up server gossip
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,425 StorageService.java:1091 - This node will not auto bootstrap because it is configured to be a seed node.
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,438 BootStrapper.java:228 - Generated random tokens. tokens are [-5170992775583325067, 1674116780131146584, -8819809845972200854, -769693528704660689, 2262017979207410181, 7960371095749481804, -6967234471688028604, 2933011967606035292, -4514187148224465523, -6940505086033879055, 1932324152907503270, -4505003593803926784, -4517503497410703210, -7698381652016469069, 2901235377163861448, 917245059085193186, -468744044884692812, 5695383700720485030, -9072536674415801792, -4548788324695715342, 4245206383349797297, -402060742572102285, 8227613976429192000, -4669560534276950201, -2609177240083139533, 6173591364533111375, -4539475806916070485, -4182150490911313008, 4951725727155190499, -6420234924625513047, -370989804508845398, 8080204075492592306, 8970623347525669680, 697650418252794857, -9054709110055230795, 1936653467745631410, 4203244179084599496, 8971956001191803852, 4493508455305235348, 2975859796238983564, 1203555498550483250, -3300160362219156026, -8675541192966052856, 289479902360239601, 7257075347125065425, -512842650730000522, -188410509963623117, -3704178876171762828, -3554792329317286656, -8607667257055898492, -1790351839575379427, 2114990147760749522, 2708482471630812778, 3508992670956523833, 3289222956108779253, -7624322870262136891, 5318068116306660008, 2722531803977829935, -1585835643953258126, -5874284909836012740, -4823071645154228011, 8610292656224456930, 7620099906451840717, -7246901144465328869, -423637434140043496, 7781829745461743037, 7053622896848547587, -1911224672673264661, 6951198050901099104, 5433437914911010931, 8172829976617185160, 3269979487308844346, 6634475204212810406, 4610639577184646723, -4691080822236429500, -5840724797317567795, -295411723352263945, -938929165606456246, 3837034454380507490, 3245529075325486103, -7277779130860272968, -1257188091059703672, -1950448265388805265, 5358165260710678610, 5254252131948526892, 1472486673669136559, 267130786831574711, -4650603821222673577, 3361328492488323155, 958328096685869705, -7420989837828788529, -6906537212652241491, -9048990611495036450, -5302148555754186549, 9207630623557952531, -7819080447266770312, 3682636682704244813, -1138157673995534785, 1693451542381650930, 2687891525258296096, -5788024671515363829, -3364984029115772774, -4978612554898298645, 8272059053378218053, -7072984231592133311, 1808690525098120372, -2457250023693187515, -4543755342230409561, 2370665694818704654, -7243418692371011720, -6223616695768904087, -4096619569292475492, 346345957289329255, 6486260386533432211, 3169205549141195381, 263848136167223263, -8326201158382067584, -4277365304282885883, 8178398126168291766, -8122053774838180736, -2713444267845572275, -6555167107430332539, -8508682746719195059, 5645091674024938652, 6225780077910786801, -3570322163542322115, -2145831065971280882, 2544865107340038320, -2773970348260758950, -3174690685847234298, -338150506131367738, -431627728282424493, 2375797226344836525, -3615361757761985172, 7585333562480833148, 4357522223787177918, 5381830314843069478, -2502185434650031549, -4629383550286784783, -9129711043034722422, -9105786277372792911, 3898298521823725914, 3684315301970519876, -5624584568825160462, 4389860591289365117, -7742529923927599419, -675137319670603312, 6367424440737251818, -802859989977119245, 7304465202784023081, 4843887718689382499, 7193581735385101000, -3290011243321323632, -2233514854840029032, 2675348485199122420, 325170606169979237, 2936238170060170478, -9170046908914401515, -624005909957812539, -3116109704511605683, -2759066005854901309, 5719688305766103356, 6985014866758709828, -7699072722351402997, 1951480101855329218, -6488338335766159851, 2340301812057356757, 2376839659578982395, -7504527174485855413, -1983088774188158931, 2359106274304186936, -676766912305832532, -821392025356398348, -8869113398464794109, -8027167645656035244, -2697133265134970409, 144855528201056789, -8188621571575358716, 5839084880315060785, -6595557204184981402, 5916168664863455005, -4276223617152967200, 365127851977295622, 595824537277454495, -4512441622188551777, -1085056193285380280, -7675990091166915131, -1890477395304482197, 1075017925765818884, -826264870254438548, -8566033125125379974, 945259521009427523, 7332060466054576823, 4719634455650917567, -39243516194664519, -3496236122156895552, -2612905024305826591, 4048601103221141055, 6868752578234427236, -5968374937633129940, 6365241887668542957, -2246463867437561627, 2707856782397249037, 4613917642146746667, 5868817972905901641, -6268935005566694553, 1792325443148031873, -5841809481219973098, -5512820972279574880, 2351146279601899188, -6210523665986898313, -3323811494366593904, -5828300498673630857, -6294342756873554327, -2071951778732859718, 125263091546435846, -7615946979940808959, -7270397980229388392, 4548626421370202813, 440636532807625786, 6825890415151746291, -6513429710140631044, 1781726686239804333, -7663176542627299713, 2260404419327649789, -3333437363570348722, 786108685214408581, -2058931115612890808, 2658931988502797081, -8271079298576689942, -7432521897688627893, 8811718277511312748, -5300596298758096218, -2882899516858791809, -7495071636199349218, -7231158800091686141, 7374177856880768469, 726394398107008017, -9024638773649362029, 3339615310976102653, -8468963777908742699, 4560683251529283995, -5443762161040406583, 2455883774589153461, 15759658622502770, -310216247138951156, -8303102548723146054, 7201062967425063958, -1953501548085877876, -5441258273693239106, -8260861963051843396, 3888214753499973753, -4109551130082522837, 8422289756491786734, 1205747804365261213, 8489751693233326192]
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,979 StorageService.java:791 - Cassandra version: 3.11.19
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,979 StorageService.java:792 - Thrift API version: 20.1.0
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,979 StorageService.java:793 - CQL supported versions: 3.4.4 (default: 3.4.4)
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:34,980 StorageService.java:795 - Native protocol supported versions: 3/v3, 4/v4, 5/v5-beta (default: 4/v4)
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,008 IndexSummaryManager.java:87 - Initializing index summary manager with a memory pool size of 399 MB and a resize interval of 60 minutes
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,020 MessagingService.java:750 - Starting Messaging Service on localhost/127.0.0.1:7000 (lo)
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,036 StorageService.java:723 - Unable to gossip with any peers but continuing anyway since node is in its own seed list
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,051 StorageService.java:877 - Loading persisted ring state
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,052 StorageService.java:1008 - Starting up server gossip
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,094 StorageService.java:1091 - This node will not auto bootstrap because it is configured to be a seed node.
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,104 BootStrapper.java:228 - Generated random tokens. tokens are [520079494045894953, -2059931027246850578, 8279464645019857157, -3342088730041406561, -1701298323947447685, 8608928770632610399, -4130239754197774411, 2271131875669060781, 2733949296004897741, -4262687821735926839, -7539934090842929711, -6911844867249232200, -8247045747880379128, 7505811885519629671, -8321505201955388584, -8754628678867775341, -3877007336211076663, -4365806393850215144, -4465361230927878902, 399260471896289495, 5999634219065513800, 5700230242601744425, 2301149510670721540, 7383853487106010005, 7331310847488935772, 7914491807473942406, 2185523458498657402, -7839595764435899366, -3893662822035371288, -4276355067144142260, -3414028139780649743, 5868939761289337602, 5769856624894851487, 3492508672576304116, -9021088447369899402, 4080334150473313136, -8627573893236046468, 5003212826164946328, -1589731182306719133, 4619699545319223261, 7576536404798210318, -8195730463576561355, -2523182596165661086, 7427926335284543129, -6936368521742410194, -2945401915997225497, 8796296557394973151, -8096326081013472549, -2234856417032147072, 8875171178308361604, -5622569641076604497, -1751642356465832948, -4015248658640612761, -1669967633619606964, 4365368768532421825, 6122781984324849027, 5940988955007015000, -7077462515071906039, -620316901309037743, -4850306513467161038, -8983822073434835508, -3491306337056618194, -8670353307151035782, -872457488179662232, 986233853367165123, -7124263617649364116, 6172789632281034232, 5107894402814418827, 4417224903118268619, 8959489070896032829, 5761182635650536579, 8587401356113484159, 3590679553265290737, -6376222926168558324, 4392444177601716589, -8436954378258356380, 5981120127642929551, -5327152103377410488, 4254839651663998512, 4285758864877246696, -5507705869538010770, 1289626394798825948, 142909125738902189, 4358500767776027442, -4475174777674825761, 3987965673086338208, 6850588387364795667, 7652401644901906065, -818290325729326963, 8053359950182120867, 2115606946353467663, -3395920111716239009, -138914135747620201, 5468565913711188321, 789172847072962290, -8189853314974273203, 8270081596757110051, 6970146324594683600, 2254544087932520379, -3214897373637884675, -5113732209494588683, -7412468708137594919, -6692318777137335954, -7293946264522724144, 4117675711647831255, 2924627812861684230, -7962386308431031313, 9137780464902826750, -1902223530380411196, -7799505980101273804, -7400581110596493760, -3039389023891299213, -1303675983717405445, 951532706315528705, -4707980538665715279, 5991904682492049797, -7357331422102600716, -8388557778475418546, 6034749021575059074, -7813037538914178421, 6904987234479245760, -2887190115140112664, -2689802612849654357, 2336297179342602527, 7219349653971071690, 8149989961674425793, 6185333819429461823, 5283208008061287151, 7878177039495034716, 5125317344568006975, -3876677466903283489, -6991461210612697709, -6568700058620977670, -3667400567920823431, 6170116048390331323, -1325883805028434695, 4074413716582655711, -2312071926014522117, 4040403330234552735, 421350745526508131, 7695217937975888497, 7984520195717056692, -7972022699518207481, 5603236534060602894, 8671459826032604473, -485880506214829593, 2100433416073842277, 600905753404595905, -3508941886710224193, -2254936790415370456, 5456704449406756981, 4965284907636126678, 8109447614376472968, -7189559194328614548, -1661319323581510580, -7572321143428896406, -5516132718745371257, 4169082909851468518, -94414327103049090, -1939344835340895614, 3852390680986574482, 8418914520640149225, 6649316065885502626, -7205166432075474713, 8562478326337007368, -4909320476098800001, 9176357251805485986, -2942537576012235708, 6330325151581507331, 1331776375771736728, -7041963739922717448, -4677908671987150593, 6359220945173916544, 3462130548050463912, 2907109210270579226, 6170419155824186732, 8479283625598270677, -5116448826420647225, -4449974813224023429, 4310459699697145313, -3008762881045614427, -4208043383674390885, 3933724767369918733, -5095240428422265533, 8025937063161838159, 33555742057735745, -380262734660944392, -7271788966741207598, -3027501367761706877, -3920718661157183305, -6441286672588251157, 7141267590305016653, -8840183978845529986, -7952196642402248992, -977353839887333481, 8263990990402597079, -2457497750511076662, 2855599178230049079, -1438162886905409247, -4944974925982333752, -4188274856124488032, 2622878779436415617, -2217624498958786389, -3280016061466283127, -3748043787412295990, 5070322998423276969, 1290809681888414578, -2955411596741285238, 2164699380367574355, -5126402180085112048, 5482831084432262483, -6980791151082602139, -4536807165307601893, 515197948883532097, 1844651076829153963, -1510548366470093726, -4443771599771592163, -243294133188626648, -1397560452996760604, 1542187799693123276, -4747770622654420529, -2012640221581715401, 1554554741821193547, -8462529648746953198, -3591326984709412696, -6276526244734406967, 5194123735853035359, -3977523027235728064, -3979885170223373954, -4375140577762817965, 5311500393724765003, -7931437523035441414, -8257471973565571404, 8356164085085574313, -1584789388794523975, -8114806725927764760, 7652650443473376153, 3343538463399070964, -808951054832603561, -7072590323957757900, -6824270517211083524, -8636665395134185360, -2768971988929042892, -3108832653720996160, -6548407399004643048, -3483535478470606859, 1675059514717204303, -6243337623948155254, 7900449140443676870, 7805592426497172868, -8942342458105278906, -1314725778976966420, -809249275025318788, -7379798389556824991, 6295168901919446424, 2338213334763872385]
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,236 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_traces as storage service is not initialized
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,238 ColumnFamilyStore.java:432 - Initializing system_traces.events
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,244 ColumnFamilyStore.java:432 - Initializing system_traces.sessions
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,253 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_distributed as storage service is not initialized
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,253 ColumnFamilyStore.java:432 - Initializing system_distributed.parent_repair_history
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,257 ColumnFamilyStore.java:432 - Initializing system_distributed.repair_history
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,260 ColumnFamilyStore.java:432 - Initializing system_distributed.view_build_status
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,264 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_auth as storage service is not initialized
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,265 ColumnFamilyStore.java:432 - Initializing system_auth.resource_role_permissons_index
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,269 ColumnFamilyStore.java:432 - Initializing system_auth.role_members
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,272 ColumnFamilyStore.java:432 - Initializing system_auth.role_permissions
+cassandra_c  | INFO  [MigrationStage:1] 2025-07-06 21:11:36,276 ColumnFamilyStore.java:432 - Initializing system_auth.roles
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | INFO  [main] 2025-07-06 21:11:36,296 StorageService.java:1670 - JOINING: Finish joining ring
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_c  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,663 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_traces as storage service is not initialized
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,664 ColumnFamilyStore.java:432 - Initializing system_traces.events
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,672 ColumnFamilyStore.java:432 - Initializing system_traces.sessions
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,680 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_distributed as storage service is not initialized
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,681 ColumnFamilyStore.java:432 - Initializing system_distributed.parent_repair_history
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,685 ColumnFamilyStore.java:432 - Initializing system_distributed.repair_history
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,688 ColumnFamilyStore.java:432 - Initializing system_distributed.view_build_status
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,692 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_auth as storage service is not initialized
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,693 ColumnFamilyStore.java:432 - Initializing system_auth.resource_role_permissons_index
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,337 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_traces as storage service is not initialized
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,340 ColumnFamilyStore.java:432 - Initializing system_traces.events
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,345 ColumnFamilyStore.java:432 - Initializing system_traces.sessions
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,354 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_distributed as storage service is not initialized
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,355 ColumnFamilyStore.java:432 - Initializing system_distributed.parent_repair_history
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,358 ColumnFamilyStore.java:432 - Initializing system_distributed.repair_history
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,697 ColumnFamilyStore.java:432 - Initializing system_auth.role_members
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,701 ColumnFamilyStore.java:432 - Initializing system_auth.role_permissions
+cassandra_b  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,705 ColumnFamilyStore.java:432 - Initializing system_auth.roles
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | INFO  [main] 2025-07-06 21:11:35,727 StorageService.java:1670 - JOINING: Finish joining ring
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,361 ColumnFamilyStore.java:432 - Initializing system_distributed.view_build_status
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,365 ViewManager.java:137 - Not submitting build tasks for views in keyspace system_auth as storage service is not initialized
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,366 ColumnFamilyStore.java:432 - Initializing system_auth.resource_role_permissons_index
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,369 ColumnFamilyStore.java:432 - Initializing system_auth.role_members
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,372 ColumnFamilyStore.java:432 - Initializing system_auth.role_permissions
+cassandra_a  | INFO  [MigrationStage:1] 2025-07-06 21:11:35,375 ColumnFamilyStore.java:432 - Initializing system_auth.roles
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | INFO  [main] 2025-07-06 21:11:35,396 StorageService.java:1670 - JOINING: Finish joining ring
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_b  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+cassandra_a  | mbind: Operation not permitted
+

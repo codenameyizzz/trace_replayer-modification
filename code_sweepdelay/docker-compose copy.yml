@@ -1,0 +1,50 @@
+
+services:
+  a:
+    image: cassandra:3.11
+    container_name: cassandra_a
+    networks:
+      - blockade
+    ports:
+      - "9042:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: "Test Cluster"
+      CASSANDRA_SEEDS: "cassandra_a,cassandra_b"
+    command: >
+      bash -c "cassandra -R && sleep 3600"
+
+  b:
+    image: cassandra:3.11
+    container_name: cassandra_b
+    networks:
+      - blockade
+    ports:
+      - "9142:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: "Test Cluster"
+      CASSANDRA_SEEDS: "cassandra_a,cassandra_b"
+    depends_on:
+      - a
+    command: >
+      bash -c "cassandra -R && sleep 3600"
+
+  c:
+    image: cassandra:3.11
+    container_name: cassandra_c
+    networks:
+      - blockade
+    ports:
+      - "9242:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: "Test Cluster"
+      CASSANDRA_SEEDS: "cassandra_a,cassandra_b"
+    depends_on:
+      - a
+      - b
+    command: >
+      bash -c "cassandra -R && sleep 3600"
+
+networks:
+  blockade:
+    driver: bridge
+

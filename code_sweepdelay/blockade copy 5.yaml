@@ -1,0 +1,7 @@
+containers:
+  cassandra_a:
+    image: cassandra:3.11
+  cassandra_b:
+    image: cassandra:3.11
+  cassandra_c:
+    image: cassandra:3.11

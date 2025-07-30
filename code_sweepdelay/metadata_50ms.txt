@@ -1,0 +1,9 @@
+mode=delay
+followers=etcd2
+value=50ms
+duration=60s
+endpoints=http://etcd0:2379
+total_puts=10000
+elapsed_ms=1189183
+throughput_ops_per_s=8
+timestamp=Tue Jul 22 05:43:43 UTC 2025

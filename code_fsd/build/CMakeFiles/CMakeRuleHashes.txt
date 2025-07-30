@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+05d0eb69afcaf402a1457ab832144595 CMakeFiles/thrift

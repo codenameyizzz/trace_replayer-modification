@@ -1,0 +1,91 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 90 SECONDS
+  No Warmup: false
+  Consistency Level: ONE
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 50
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: NORMAL
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [cassandra_a, cassandra_b, cassandra_c]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: TestCluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: cassandra_a/172.28.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_b/172.28.0.3; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_c/172.28.0.4; Rack: rack1
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+Failed to connect over JMX; not collecting these stats
+WARN  02:36:52,418 Timeout while setting keyspace on Connection[cassandra_c/172.28.0.4:9042-6, inFlight=6, closed=false]. This should not happen but is not critical (it will be retried)
+WARN  02:36:52,418 Timeout while setting keyspace on Connection[cassandra_c/172.28.0.4:9042-6, inFlight=6, closed=false]. This should not happen but is not critical (it will be retried)
+WARN  02:36:52,418 Timeout while setting keyspace on Connection[cassandra_c/172.28.0.4:9042-6, inFlight=6, closed=false]. This should not happen but is not critical (it will be retried)

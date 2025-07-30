@@ -1,0 +1,4 @@
+NODE            CONTAINER ID    STATUS  IP              NETWORK    PARTITION  
+cassandra_a     9cd503d92c9e    UP      172.19.0.2      SLOW                  
+cassandra_b     9b82abea2751    UP      172.19.0.3      SLOW                  
+cassandra_c     3848b24ed74c    UP      172.19.0.4      SLOW                  

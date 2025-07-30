@@ -1,0 +1,233 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 60 SECONDS
+  No Warmup: false
+  Consistency Level: QUORUM
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 50
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: VERBOSE
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [cassandra_a:9042, cassandra_b:9042, cassandra_c:9042]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: TestCluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: cassandra_a/172.28.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_b/172.28.0.3; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_c/172.28.0.4; Rack: rack1
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+java.lang.RuntimeException: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:99)
+	at org.apache.cassandra.stress.util.JmxCollector.<init>(JmxCollector.java:85)
+	at org.apache.cassandra.stress.report.StressMetrics.<init>(StressMetrics.java:108)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:229)
+	at org.apache.cassandra.stress.StressAction.warmup(StressAction.java:125)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:70)
+	at org.apache.cassandra.stress.Stress.run(Stress.java:143)
+	at org.apache.cassandra.stress.Stress.main(Stress.java:62)
+Caused by: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:369)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.apache.cassandra.tools.NodeProbe.connect(NodeProbe.java:209)
+	at org.apache.cassandra.tools.NodeProbe.<init>(NodeProbe.java:161)
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:95)
+	... 7 more
+Caused by: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.newNamingException(rmiURLContext.java:295)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:219)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parse(rmiURLContext.java:109)
+	at com.sun.jndi.url.rmi.rmiURLContext.getRootURLContext(rmiURLContext.java:314)
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:215)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at javax.management.remote.rmi.RMIConnector.findRMIServerJNDI(RMIConnector.java:1955)
+	at javax.management.remote.rmi.RMIConnector.findRMIServer(RMIConnector.java:1922)
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:287)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:220)
+	... 18 more
+Failed to connect over JMX; not collecting these stats
+Running WRITE with 50 threads 60 seconds
+java.lang.RuntimeException: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:99)
+	at org.apache.cassandra.stress.util.JmxCollector.<init>(JmxCollector.java:85)
+	at org.apache.cassandra.stress.report.StressMetrics.<init>(StressMetrics.java:108)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:229)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:89)
+	at org.apache.cassandra.stress.Stress.run(Stress.java:143)
+	at org.apache.cassandra.stress.Stress.main(Stress.java:62)
+Caused by: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:369)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.apache.cassandra.tools.NodeProbe.connect(NodeProbe.java:209)
+	at org.apache.cassandra.tools.NodeProbe.<init>(NodeProbe.java:161)
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:95)
+	... 6 more
+Caused by: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.newNamingException(rmiURLContext.java:295)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:219)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parse(rmiURLContext.java:109)
+	at com.sun.jndi.url.rmi.rmiURLContext.getRootURLContext(rmiURLContext.java:314)
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:215)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at javax.management.remote.rmi.RMIConnector.findRMIServerJNDI(RMIConnector.java:1955)
+	at javax.management.remote.rmi.RMIConnector.findRMIServer(RMIConnector.java:1922)
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:287)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:220)
+	... 17 more
+Failed to connect over JMX; not collecting these stats
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,         26595,   26595,   26595,   26595,     1.0,     0.8,     1.7,     4.5,    12.0,    39.1,    1.0,  0.00000,      0,      0,       0,       0,       0,       0
+total,         87800,   61205,   61205,   61205,     0.8,     0.7,     1.3,     2.0,     8.0,    21.8,    2.0,  0.27340,      0,      0,       0,       0,       0,       0
+total,        128972,   41172,   41172,   41172,     1.2,     0.7,     1.3,     1.9,   130.0,   133.3,    3.0,  0.17967,      0,      0,       0,       0,       0,       0
+total,        197214,   68242,   68242,   68242,     0.7,     0.7,     1.2,     1.5,     2.2,     5.3,    4.0,  0.15313,      0,      0,       0,       0,       0,       0
+total,        261351,   64137,   64137,   64137,     0.8,     0.7,     1.3,     1.9,     7.3,    16.0,    5.0,  0.12469,      0,      0,       0,       0,       0,       0
+total,        317551,   56200,   56200,   56200,     0.8,     0.7,     1.2,     1.6,     8.0,    92.3,    6.0,  0.10365,      0,      0,       0,       0,       0,       0
+total,        373856,   56305,   56305,   56305,     0.9,     0.7,     1.2,     1.7,    90.6,   111.9,    7.0,  0.08898,      0,      0,       0,       0,       0,       0
+total,        441652,   67796,   67796,   67796,     0.7,     0.7,     1.3,     1.7,     3.6,     7.7,    8.0,  0.07943,      0,      0,       0,       0,       0,       0
+total,        509377,   67725,   67725,   67725,     0.7,     0.7,     1.2,     1.6,     2.9,     6.2,    9.0,  0.07151,      0,      0,       0,       0,       0,       0
+total,        551221,   41844,   41844,   41844,     1.2,     0.7,     1.2,     1.8,   132.4,   135.8,   10.0,  0.06790,      0,      0,       0,       0,       0,       0
+total,        617565,   66344,   66344,   66344,     0.7,     0.7,     1.2,     1.7,     3.6,    19.3,   11.0,  0.06239,      0,      0,       0,       0,       0,       0
+total,        686247,   68682,   68682,   68682,     0.7,     0.7,     1.2,     1.5,     3.4,     7.1,   12.0,  0.05798,      0,      0,       0,       0,       0,       0
+total,        746135,   59888,   59888,   59888,     0.8,     0.7,     1.2,     1.5,     3.3,   138.0,   13.0,  0.05415,      0,      0,       0,       0,       0,       0
+total,        793818,   47683,   47683,   47683,     1.0,     0.7,     1.2,     1.7,   143.3,   150.1,   14.0,  0.05081,      0,      0,       0,       0,       0,       0
+total,        861815,   67997,   67997,   67997,     0.7,     0.7,     1.2,     1.5,     3.6,    21.5,   15.0,  0.04794,      0,      0,       0,       0,       0,       0
+total,        929453,   67638,   67638,   67638,     0.7,     0.7,     1.2,     1.7,     2.6,    13.1,   16.0,  0.04523,      0,      0,       0,       0,       0,       0
+total,        974360,   44907,   44907,   44907,     1.1,     0.7,     1.2,     1.7,   176.4,   182.3,   17.0,  0.04326,      0,      0,       0,       0,       0,       0
+total,       1033114,   58754,   58754,   58754,     0.8,     0.7,     1.3,     1.8,     6.0,   125.7,   18.0,  0.04099,      0,      0,       0,       0,       0,       0
+total,       1100952,   67838,   67838,   67838,     0.7,     0.7,     1.3,     1.7,     3.4,     9.9,   19.0,  0.03905,      0,      0,       0,       0,       0,       0
+total,       1162013,   61061,   61061,   61061,     0.8,     0.7,     1.2,     1.6,     8.7,   121.6,   20.0,  0.03737,      0,      0,       0,       0,       0,       0
+total,       1214846,   52833,   52833,   52833,     0.9,     0.6,     1.1,     1.5,   133.8,   139.6,   21.0,  0.03561,      0,      0,       0,       0,       0,       0
+total,       1285982,   71136,   71136,   71136,     0.7,     0.6,     1.1,     1.4,     2.6,     9.7,   22.0,  0.03446,      0,      0,       0,       0,       0,       0
+total,       1356309,   70327,   70327,   70327,     0.7,     0.7,     1.1,     1.5,     4.0,    28.3,   23.0,  0.03340,      0,      0,       0,       0,       0,       0
+total,       1407732,   51423,   51423,   51423,     0.9,     0.7,     1.1,     1.5,    95.6,   102.4,   24.0,  0.03234,      0,      0,       0,       0,       0,       0
+total,       1477766,   70034,   70034,   70034,     0.8,     0.6,     1.1,     1.5,     3.9,   103.4,   25.0,  0.03219,      0,      0,       0,       0,       0,       0
+total,       1549920,   72154,   72154,   72154,     0.7,     0.6,     1.1,     1.4,     4.0,    11.0,   26.0,  0.03129,      0,      0,       0,       0,       0,       0
+total,       1612521,   62601,   62601,   62601,     0.8,     0.6,     1.1,     1.5,    10.7,   115.6,   27.0,  0.03028,      0,      0,       0,       0,       0,       0
+total,       1669187,   56666,   56666,   56666,     0.9,     0.7,     1.1,     1.5,    96.6,   106.8,   28.0,  0.02921,      0,      0,       0,       0,       0,       0
+total,       1739921,   70734,   70734,   70734,     0.7,     0.6,     1.1,     1.5,     3.3,    16.7,   29.0,  0.02839,      0,      0,       0,       0,       0,       0
+total,       1805135,   65214,   65214,   65214,     0.8,     0.6,     1.2,     1.5,     3.4,    84.5,   30.0,  0.02758,      0,      0,       0,       0,       0,       0
+total,       1862005,   56870,   56870,   56870,     0.9,     0.7,     1.1,     1.6,    84.6,   109.3,   31.0,  0.02670,      0,      0,       0,       0,       0,       0
+total,       1932579,   70574,   70574,   70574,     0.7,     0.6,     1.1,     1.5,     3.8,    11.1,   32.0,  0.02599,      0,      0,       0,       0,       0,       0
+total,       2002386,   69807,   69807,   69807,     0.7,     0.6,     1.2,     1.6,     3.1,    20.3,   33.0,  0.02531,      0,      0,       0,       0,       0,       0
+total,       2059952,   57566,   57566,   57566,     0.9,     0.7,     1.1,     1.5,    88.8,    98.3,   34.0,  0.02458,      0,      0,       0,       0,       0,       0
+total,       2122480,   62528,   62528,   62528,     0.8,     0.6,     1.1,     1.5,    18.3,   114.8,   35.0,  0.02395,      0,      0,       0,       0,       0,       0
+total,       2193567,   71087,   71087,   71087,     0.7,     0.6,     1.1,     1.5,     2.6,     9.3,   36.0,  0.02339,      0,      0,       0,       0,       0,       0
+total,       2258080,   64513,   64513,   64513,     0.8,     0.6,     1.1,     1.6,     6.4,    92.7,   37.0,  0.02283,      0,      0,       0,       0,       0,       0
+total,       2316584,   58504,   58504,   58504,     0.8,     0.6,     1.1,     1.5,    88.6,    98.8,   38.0,  0.02223,      0,      0,       0,       0,       0,       0
+total,       2391267,   74683,   74683,   74683,     0.7,     0.6,     1.1,     1.3,     1.8,     6.8,   39.0,  0.02191,      0,      0,       0,       0,       0,       0
+total,       2457664,   66397,   66397,   66397,     0.7,     0.6,     1.1,     1.3,     3.6,    98.7,   40.0,  0.02151,      0,      0,       0,       0,       0,       0
+total,       2514059,   56395,   56395,   56395,     0.9,     0.7,     1.1,     1.4,    95.3,   111.0,   41.0,  0.02102,      0,      0,       0,       0,       0,       0
+total,       2587832,   73773,   73773,   73773,     0.7,     0.6,     1.1,     1.4,     2.0,     4.4,   42.0,  0.02068,      0,      0,       0,       0,       0,       0
+total,       2658775,   70943,   70943,   70943,     0.7,     0.6,     1.1,     1.5,     4.7,    11.5,   43.0,  0.02026,      0,      0,       0,       0,       0,       0
+total,       2718634,   59859,   59859,   59859,     0.8,     0.6,     1.0,     1.3,    90.2,   101.1,   44.0,  0.01980,      0,      0,       0,       0,       0,       0
+total,       2783861,   65227,   65227,   65227,     0.8,     0.6,     1.1,     1.4,     2.5,   129.6,   45.0,  0.01952,      0,      0,       0,       0,       0,       0
+total,       2856519,   72658,   72658,   72658,     0.7,     0.6,     1.1,     1.4,     3.3,    21.6,   46.0,  0.01922,      0,      0,       0,       0,       0,       0
+total,       2919081,   62562,   62562,   62562,     0.7,     0.6,     1.0,     1.3,     3.8,    97.5,   47.0,  0.01882,      0,      0,       0,       0,       0,       0
+total,       2983103,   64022,   64022,   64022,     0.8,     0.6,     1.1,     1.4,    97.8,   113.7,   48.0,  0.01848,      0,      0,       0,       0,       0,       0
+total,       3054384,   71281,   71281,   71281,     0.7,     0.6,     1.1,     1.5,     4.9,    25.1,   49.0,  0.01817,      0,      0,       0,       0,       0,       0
+total,       3122107,   67723,   67723,   67723,     0.7,     0.6,     1.1,     1.4,     3.9,    91.5,   50.0,  0.01792,      0,      0,       0,       0,       0,       0
+total,       3180796,   58689,   58689,   58689,     0.8,     0.6,     1.0,     1.4,    88.6,   106.5,   51.0,  0.01757,      0,      0,       0,       0,       0,       0
+total,       3254210,   73414,   73414,   73414,     0.7,     0.6,     1.1,     1.4,     2.1,     5.5,   52.0,  0.01731,      0,      0,       0,       0,       0,       0
+total,       3321106,   66896,   66896,   66896,     0.7,     0.6,     1.1,     1.4,    15.6,    89.2,   53.0,  0.01705,      0,      0,       0,       0,       0,       0
+total,       3380445,   59339,   59339,   59339,     0.8,     0.6,     1.0,     1.4,    93.9,   108.7,   54.0,  0.01674,      0,      0,       0,       0,       0,       0
+total,       3453227,   72782,   72782,   72782,     0.7,     0.6,     1.1,     1.5,     3.9,    13.8,   55.0,  0.01650,      0,      0,       0,       0,       0,       0
+total,       3520136,   66909,   66909,   66909,     0.7,     0.7,     1.2,     2.2,     6.7,    18.1,   56.0,  0.01620,      0,      0,       0,       0,       0,       0
+total,       3579353,   59217,   59217,   59217,     0.8,     0.6,     1.0,     1.4,    99.3,   105.4,   57.0,  0.01593,      0,      0,       0,       0,       0,       0
+total,       3643246,   63893,   63893,   63893,     0.8,     0.6,     1.1,     1.4,    12.1,   128.0,   58.0,  0.01570,      0,      0,       0,       0,       0,       0
+total,       3714945,   71699,   71699,   71699,     0.7,     0.6,     1.1,     1.5,     3.3,    15.0,   59.0,  0.01548,      0,      0,       0,       0,       0,       0
+total,       3780619,   65674,   65674,   65674,     0.8,     0.6,     1.1,     1.4,    12.3,   100.5,   60.0,  0.01526,      0,      0,       0,       0,       0,       0
+total,       3808159,   58779,   58779,   58779,     0.8,     0.6,     1.0,     1.4,    97.6,    99.2,   60.5,  0.01508,      0,      0,       0,       0,       0,       0
+
+
+Results:
+Op rate                   :   62,978 op/s  [WRITE: 62,978 op/s]
+Partition rate            :   62,978 pk/s  [WRITE: 62,978 pk/s]
+Row rate                  :   62,978 row/s [WRITE: 62,978 row/s]
+Latency mean              :    0.8 ms [WRITE: 0.8 ms]
+Latency median            :    0.7 ms [WRITE: 0.7 ms]
+Latency 95th percentile   :    1.1 ms [WRITE: 1.1 ms]
+Latency 99th percentile   :    1.6 ms [WRITE: 1.6 ms]
+Latency 99.9th percentile :    8.9 ms [WRITE: 8.9 ms]
+Latency max               :  182.3 ms [WRITE: 182.3 ms]
+Total partitions          :  3,808,159 [WRITE: 3,808,159]
+Total errors              :          0 [WRITE: 0]
+Total GC count            : 0
+Total GC memory           : 0.000 KiB
+Total GC time             :    0.0 seconds
+Avg GC time               :    NaN ms
+StdDev GC time            :    0.0 ms
+Total operation time      : 00:01:00
+
+END

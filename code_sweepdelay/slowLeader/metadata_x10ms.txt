@@ -1,0 +1,17 @@
+timestamp=Sat Jul 26 06:30:26 UTC 2025
+label=slowleader_mid2end10ms
+mode=delay
+delay=10ms
+duration=120
+inject_at=60
+leader=etcd0
+benchmark_node=etcd1
+endpoints=http://etcd0:2379,http://etcd1:2379,http://etcd2:2379
+total_ops=10000
+parallelism=10
+elapsed_ms=114533
+throughput_ops_per_sec=87
+p50=118
+p95=144
+p99=153
+pmax=169

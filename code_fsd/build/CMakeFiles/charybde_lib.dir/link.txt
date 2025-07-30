@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcharybde_lib.a  CMakeFiles/charybde_lib.dir/charybde_ops.cc.o CMakeFiles/charybde_lib.dir/server.cc.o
+/usr/bin/ranlib libcharybde_lib.a

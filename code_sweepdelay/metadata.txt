@@ -1,0 +1,1 @@
+[INFO] Delay 2000ms injected BEFORE workload to  cassandra_b cassandra_c

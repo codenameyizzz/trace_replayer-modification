@@ -1,0 +1,118 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 90 SECONDS
+  No Warmup: false
+  Consistency Level: ONE
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 50
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: VERBOSE
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [cassandra_a, cassandra_b, cassandra_c]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: TestCluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: cassandra_a/172.28.0.2; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_b/172.28.0.3; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_c/172.28.0.4; Rack: rack1
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+java.lang.RuntimeException: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:99)
+	at org.apache.cassandra.stress.util.JmxCollector.<init>(JmxCollector.java:85)
+	at org.apache.cassandra.stress.report.StressMetrics.<init>(StressMetrics.java:108)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:229)
+	at org.apache.cassandra.stress.StressAction.warmup(StressAction.java:125)
+	at org.apache.cassandra.stress.StressAction.run(StressAction.java:70)
+	at org.apache.cassandra.stress.Stress.run(Stress.java:143)
+	at org.apache.cassandra.stress.Stress.main(Stress.java:62)
+Caused by: java.io.IOException: Failed to retrieve RMIServer stub: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:369)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.apache.cassandra.tools.NodeProbe.connect(NodeProbe.java:209)
+	at org.apache.cassandra.tools.NodeProbe.<init>(NodeProbe.java:161)
+	at org.apache.cassandra.stress.util.JmxCollector.connect(JmxCollector.java:95)
+	... 7 more
+Caused by: javax.naming.InvalidNameException: invalid authority: cassandra_a:7199 [Root exception is java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199]
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.newNamingException(rmiURLContext.java:295)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:219)
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parse(rmiURLContext.java:109)
+	at com.sun.jndi.url.rmi.rmiURLContext.getRootURLContext(rmiURLContext.java:314)
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:215)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at javax.management.remote.rmi.RMIConnector.findRMIServerJNDI(RMIConnector.java:1955)
+	at javax.management.remote.rmi.RMIConnector.findRMIServer(RMIConnector.java:1922)
+	at javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:287)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: invalid authority: cassandra_a:7199
+	at com.sun.jndi.url.rmi.rmiURLContext$Parser.parseCompat(rmiURLContext.java:220)
+	... 18 more
+Failed to connect over JMX; not collecting these stats

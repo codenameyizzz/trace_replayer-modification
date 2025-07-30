@@ -1,0 +1,7 @@
+Latency median            : 2900.000 ms
+Latency 95th percentile   : 3753.000 ms
+Latency 99th percentile   : 4011.000 ms
+Latency max               : 5066.000 ms
+
+Total puts                :    10000
+Throughput                :        3 ops/sec

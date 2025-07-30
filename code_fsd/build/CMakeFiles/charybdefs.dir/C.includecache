@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cc/osfn_fd/charybdefs/charybde_ops.h
+stdint.h
+-
+sys/types.h
+-
+fuse.h
+-
+
+/home/cc/osfn_fd/charybdefs/charybdefs.c
+stdio.h
+-
+string.h
+-
+errno.h
+-
+fcntl.h
+-
+charybde_ops.h
+/home/cc/osfn_fd/charybdefs/charybde_ops.h
+server.hh
+/home/cc/osfn_fd/charybdefs/server.hh
+
+/home/cc/osfn_fd/charybdefs/server.hh
+string
+-
+

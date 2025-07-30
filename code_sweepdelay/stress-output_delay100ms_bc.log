@@ -1,0 +1,144 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 30 SECONDS
+  No Warmup: false
+  Consistency Level: ONE
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 50
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: NORMAL
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [cassandra_a, cassandra_b, cassandra_c]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: TestCluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: cassandra_c/172.19.0.4; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_b/172.19.0.3; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_a/172.19.0.2; Rack: rack1
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+Failed to connect over JMX; not collecting these stats
+Running WRITE with 50 threads 30 seconds
+Failed to connect over JMX; not collecting these stats
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,           432,     432,     432,     432,    58.3,   100.3,   100.8,   101.7,   101.9,   101.9,    1.0,  0.00000,      0,      0,       0,       0,       0,       0
+total,          1206,     774,     774,     774,    64.9,   100.3,   100.4,   100.5,   100.7,   100.7,    2.0,  0.20010,      0,      0,       0,       0,       0,       0
+total,          1936,     730,     730,     730,    68.8,   100.3,   100.4,   100.5,   101.2,   101.6,    3.0,  0.13570,      0,      0,       0,       0,       0,       0
+total,          2679,     743,     743,     743,    67.6,   100.3,   100.4,   100.5,   100.6,   100.6,    4.0,  0.10299,      0,      0,       0,       0,       0,       0
+total,          3446,     767,     767,     767,    65.5,   100.3,   100.4,   100.5,   100.5,   100.5,    5.0,  0.08392,      0,      0,       0,       0,       0,       0
+total,          4183,     737,     737,     737,    68.1,   100.3,   100.4,   100.5,   100.6,   100.7,    6.0,  0.06992,      0,      0,       0,       0,       0,       0
+total,          4906,     723,     723,     723,    69.4,   100.3,   100.4,   100.5,   100.5,   100.9,    7.0,  0.05981,      0,      0,       0,       0,       0,       0
+total,          5664,     758,     758,     758,    66.2,   100.3,   100.4,   100.5,   101.0,   102.6,    8.0,  0.05269,      0,      0,       0,       0,       0,       0
+total,          6385,     721,     721,     721,    69.6,   100.3,   100.4,   100.5,   101.1,   104.6,    9.0,  0.04678,      0,      0,       0,       0,       0,       0
+total,          7112,     727,     727,     727,    69.1,   100.3,   100.4,   100.5,   100.5,   100.6,   10.0,  0.04206,      0,      0,       0,       0,       0,       0
+total,          7876,     764,     764,     764,    65.7,   100.3,   100.4,   100.4,   100.5,   100.5,   11.0,  0.03850,      0,      0,       0,       0,       0,       0
+total,          8616,     740,     740,     740,    67.8,   100.3,   100.3,   100.4,   100.5,   100.5,   12.0,  0.03529,      0,      0,       0,       0,       0,       0
+total,          9381,     765,     765,     765,    65.6,   100.3,   100.4,   100.4,   102.1,   102.3,   13.0,  0.03278,      0,      0,       0,       0,       0,       0
+total,         10144,     763,     763,     763,    65.8,   100.3,   100.4,   100.4,   100.5,   100.6,   14.0,  0.03056,      0,      0,       0,       0,       0,       0
+total,         10913,     769,     769,     769,    65.3,   100.3,   100.4,   100.4,   100.5,   100.6,   15.0,  0.02867,      0,      0,       0,       0,       0,       0
+total,         11643,     730,     730,     730,    68.8,   100.3,   100.4,   100.5,   100.5,   100.5,   16.0,  0.02688,      0,      0,       0,       0,       0,       0
+total,         12400,     757,     757,     757,    66.2,   100.3,   100.4,   100.4,   100.5,   100.5,   17.0,  0.02534,      0,      0,       0,       0,       0,       0
+total,         13171,     771,     771,     771,    63.4,   100.3,   100.3,   100.4,   100.5,   100.5,   18.0,  0.02405,      0,      0,       0,       0,       0,       0
+total,         13890,     719,     719,     719,    66.5,   100.3,   100.4,   100.4,   100.5,   100.5,   19.0,  0.02282,      0,      0,       0,       0,       0,       0
+total,         14617,     727,     727,     727,    67.4,   100.3,   100.4,   100.4,   100.5,   100.5,   20.0,  0.02169,      0,      0,       0,       0,       0,       0
+total,         15345,     728,     728,     728,    69.0,   100.3,   100.4,   100.7,   101.0,   101.3,   21.0,  0.02066,      0,      0,       0,       0,       0,       0
+total,         16080,     735,     735,     735,    68.3,   100.3,   100.4,   100.5,   100.7,   100.8,   22.0,  0.01972,      0,      0,       0,       0,       0,       0
+total,         16867,     787,     787,     787,    63.8,   100.3,   100.4,   100.5,   100.6,   100.8,   23.0,  0.01908,      0,      0,       0,       0,       0,       0
+total,         17615,     748,     748,     748,    67.1,   100.3,   100.4,   100.5,   100.5,   100.5,   24.0,  0.01828,      0,      0,       0,       0,       0,       0
+total,         18348,     733,     733,     733,    68.5,   100.3,   100.4,   100.5,   100.5,   100.5,   25.0,  0.01755,      0,      0,       0,       0,       0,       0
+total,         19090,     742,     742,     742,    67.6,   100.3,   100.4,   100.5,   100.5,   100.7,   26.0,  0.01688,      0,      0,       0,       0,       0,       0
+total,         19800,     710,     710,     710,    70.7,   100.3,   100.4,   100.4,   100.5,   100.9,   27.0,  0.01632,      0,      0,       0,       0,       0,       0
+total,         20555,     755,     755,     755,    66.5,   100.3,   100.4,   100.4,   100.5,   100.7,   28.0,  0.01575,      0,      0,       0,       0,       0,       0
+total,         21288,     733,     733,     733,    68.5,   100.3,   100.4,   100.4,   100.5,   100.5,   29.0,  0.01521,      0,      0,       0,       0,       0,       0
+total,         22043,     755,     755,     755,    66.5,   100.3,   100.3,   100.4,   101.1,   101.8,   30.0,  0.01472,      0,      0,       0,       0,       0,       0
+total,         22391,     768,     768,     768,    72.1,   100.3,   100.5,   100.9,   101.8,   101.8,   30.5,  0.01565,      0,      0,       0,       0,       0,       0
+
+
+Results:
+Op rate                   :      735 op/s  [WRITE: 735 op/s]
+Partition rate            :      735 pk/s  [WRITE: 735 pk/s]
+Row rate                  :      735 row/s [WRITE: 735 row/s]
+Latency mean              :   67.0 ms [WRITE: 67.0 ms]
+Latency median            :  100.3 ms [WRITE: 100.3 ms]
+Latency 95th percentile   :  100.4 ms [WRITE: 100.4 ms]
+Latency 99th percentile   :  100.5 ms [WRITE: 100.5 ms]
+Latency 99.9th percentile :  101.1 ms [WRITE: 101.1 ms]
+Latency max               :  104.6 ms [WRITE: 104.6 ms]
+Total partitions          :     22,391 [WRITE: 22,391]
+Total errors              :          0 [WRITE: 0]
+Total GC count            : 0
+Total GC memory           : 0.000 KiB
+Total GC time             :    0.0 seconds
+Avg GC time               :    NaN ms
+StdDev GC time            :    0.0 ms
+Total operation time      : 00:00:30
+
+END

@@ -1,0 +1,4 @@
+NODE            CONTAINER ID    STATUS  IP              NETWORK    PARTITION  
+a               696da8df3c38    UP      172.17.0.2      SLOW                  
+b               36631dcbf8d4    UP      172.17.0.3      SLOW                  
+c               e1264c245d21    UP      172.17.0.4      SLOW                  

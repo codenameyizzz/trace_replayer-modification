@@ -1,0 +1,7 @@
+Latency median (p50)       : 110 ms
+Latency 95th percentile    : 133 ms
+Latency 99th percentile    : 140 ms
+Latency max                : 151 ms
+Total ops                  : 10000
+Elapsed ms                 : 107892
+Throughput                 : 92 ops/sec

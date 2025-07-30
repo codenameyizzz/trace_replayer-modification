@@ -1,47 +1,42 @@
 #!/bin/bash
 
-# Usage: ./sweep_fsdelay.sh [param_name] [start] [step] [end]
-# Example: ./sweep_fsdelay.sh GC_INTERVAL 100 100 500
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 DELAY_US start step end"
+    exit 1
+fi
 
-PARAM="$1"
-START="$2"
-STEP="$3"
-END="$4"
+PARAM=$1
+START=$2
+STEP=$3
+END=$4
 
-# Fixed values (adjust if sweeping others)
-BURST_LEN=10
-DELAY_US=100000
-GC_INTERVAL=500
+# Path setup
+TRACE="/home/cc/traces/trace_p100_sample10k_clean.trace"
+DEVICE="/dev/nvme0n1"
+LOG_DIR="./fsdelay_logs"
+mkdir -p $LOG_DIR
 
-TRACE_PATH="../traces/trace_p100_sample10k_clean.trace"
-BIN="./io_fsdelay"
-LOG_DIR="./fsdelay_logs_sweep"
-mkdir -p ${LOG_DIR}
+# Constants
+GC_INTERVAL_MS=10
+BURST_LEN=100
+READ_MODE=1
 
-for VAL in $(seq ${START} ${STEP} ${END}); do
-    echo "Running with ${PARAM} = ${VAL}"
+echo "[*] Compiling io_fsdelay..."
+gcc io_fsdelay.c -o io_fsdelay -lpthread
 
-    # Assign values based on sweep param
-    case "$PARAM" in
-        GC_INTERVAL)
-            GC_INTERVAL=$VAL ;;
-        BURST_LEN)
-            BURST_LEN=$VAL ;;
-        DELAY_US)
-            DELAY_US=$VAL ;;
-        *)
-            echo "Unknown param: $PARAM"
-            exit 1 ;;
-    esac
+for ((val=$START; val<=$END; val+=$STEP))
+do
+    echo "=== Running with ${PARAM} = ${val} ==="
+    LOG_NAME="trace_fsdelay_GCINT${GC_INTERVAL_MS}_BURST${BURST_LEN}_DELAY${val}.log"
+    LOG_PATH="${LOG_DIR}/${LOG_NAME}"
 
-    LOG_NAME="trace_fsdelay_${PARAM}${VAL}_GCINT${GC_INTERVAL}_BURST${BURST_LEN}_DELAY${DELAY_US}.log"
-
-    ${BIN} -f ${TRACE_PATH} \
-           -l ${LOG_DIR}/${LOG_NAME} \
-           -m 0 -r 1 -d /dev/null \
-           -g ${GC_INTERVAL} \
-           -b ${BURST_LEN} \
-           -y ${DELAY_US}
+    echo "Logfile: ${LOG_PATH}"
+    sudo ./io_fsdelay \
+        -f $TRACE \
+        -l $LOG_PATH \
+        -r $READ_MODE \
+        -d $DEVICE \
+        -g $GC_INTERVAL_MS \
+        -b $BURST_LEN \
+        -y $val
 done
-
-echo "All sweep runs completed. Logs stored in ${LOG_DIR}"

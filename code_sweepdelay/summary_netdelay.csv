@@ -1,0 +1,7 @@
+filename,delay_ms,throughput_ops,latency_mean,latency_p95,latency_max
+stress-output_1ms_300s.txt,,246083,0.2,0.3,609.2
+stress-output10.txt,10,224544,0.2,0.3,178.8
+stress-output20.txt,20,215869,0.2,0.3,135.8
+stress-output30.txt,30,218390,0.2,0.3,280.5
+stress-output40.txt,40,217160,0.2,0.3,172.9
+stress-output50.txt,50,218613,0.2,0.3,306.4

@@ -1,0 +1,7 @@
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/edit_cache.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/charybdefs.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/server.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/server_lib.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/thrift.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/rebuild_cache.dir
+/home/cc/osfn_fd/charybdefs/build/CMakeFiles/charybde_lib.dir

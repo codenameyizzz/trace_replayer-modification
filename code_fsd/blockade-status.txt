@@ -1,0 +1,4 @@
+NODE            CONTAINER ID    STATUS  IP              NETWORK    PARTITION  
+a               9bbfc7f59508    UP      172.17.0.2      NORMAL                
+b               b05636526de1    UP      172.17.0.3      NORMAL                
+c               2fc51bc1ae79    UP      172.17.0.4      NORMAL                

@@ -1,0 +1,267 @@
+******************** Stress Settings ********************
+Command:
+  Type: write
+  Count: -1
+  Duration: 90 SECONDS
+  No Warmup: false
+  Consistency Level: ONE
+  Target Uncertainty: not applicable
+  Key Size (bytes): 10
+  Counter Increment Distibution: add=fixed(1)
+Rate:
+  Auto: false
+  Thread Count: 50
+  OpsPer Sec: 0
+Population:
+  Sequence: 1..1000000
+  Order: ARBITRARY
+  Wrap: true
+Insert:
+  Revisits: Uniform:  min=1,max=1000000
+  Visits: Fixed:  key=1
+  Row Population Ratio: Ratio: divisor=1.000000;delegate=Fixed:  key=1
+  Batch Type: not batching
+Columns:
+  Max Columns Per Key: 1
+  Column Names: [C0]
+  Comparator: AsciiType
+  Timestamp: null
+  Variable Column Count: false
+  Slice: false
+  Size Distribution: Fixed:  key=34
+  Count Distribution: Fixed:  key=1
+Errors:
+  Ignore: false
+  Tries: 10
+Log:
+  No Summary: false
+  No Settings: false
+  File: null
+  Interval Millis: 1000
+  Level: NORMAL
+Mode:
+  API: JAVA_DRIVER_NATIVE
+  Connection Style: CQL_PREPARED
+  CQL Version: CQL3
+  Protocol Version: V4
+  Username: null
+  Password: null
+  Auth Provide Class: null
+  Max Pending Per Connection: 128
+  Connections Per Host: 8
+  Compression: NONE
+Node:
+  Nodes: [cassandra_a, cassandra_b, cassandra_c]
+  Is White List: false
+  Datacenter: null
+Schema:
+  Keyspace: keyspace1
+  Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
+  Replication Strategy Pptions: {replication_factor=3}
+  Table Compression: null
+  Table Compaction Strategy: null
+  Table Compaction Strategy Options: {}
+Transport:
+  factory=org.apache.cassandra.thrift.TFramedTransportFactory; truststore=null; truststore-password=null; keystore=null; keystore-password=null; ssl-protocol=TLS; ssl-alg=SunX509; store-type=JKS; ssl-ciphers=TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA; 
+Port:
+  Native Port: 9042
+  Thrift Port: 9160
+  JMX Port: 7199
+Send To Daemon:
+  *not set*
+Graph:
+  File: null
+  Revision: unknown
+  Title: null
+  Operation: WRITE
+TokenRange:
+  Wrap: false
+  Split Factor: 1
+
+Connected to cluster: TestCluster, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: cassandra_c/172.19.0.4; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_b/172.19.0.3; Rack: rack1
+Datatacenter: datacenter1; Host: cassandra_a/172.19.0.2; Rack: rack1
+WARN  16:11:37,386 Error creating pool to cassandra_c/172.19.0.4:9042
+com.datastax.driver.core.exceptions.ConnectionException: [cassandra_c/172.19.0.4] Pool was closed during initialization
+	at com.datastax.driver.core.HostConnectionPool$2.onSuccess(HostConnectionPool.java:149)
+	at com.datastax.driver.core.HostConnectionPool$2.onSuccess(HostConnectionPool.java:135)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:1319)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$CombinedFuture.setOneValue(Futures.java:1764)
+	at com.google.common.util.concurrent.Futures$CombinedFuture.access$400(Futures.java:1608)
+	at com.google.common.util.concurrent.Futures$CombinedFuture$2.run(Futures.java:1686)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:457)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1$1.onSuccess(Futures.java:479)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:1319)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:457)
+	at com.google.common.util.concurrent.Futures$ImmediateFuture.addListener(Futures.java:106)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1322)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1.onFailure(Futures.java:476)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:1310)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:202)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1$1.onFailure(Futures.java:487)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:1310)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:457)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.add(ExecutionList.java:101)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:170)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1322)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1.onFailure(Futures.java:476)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:1310)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:202)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:902)
+	at com.google.common.util.concurrent.Futures$1$1.run(Futures.java:635)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at com.google.common.util.concurrent.Futures$1.run(Futures.java:632)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:457)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:202)
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:68)
+	at com.datastax.driver.core.Connection$1.operationComplete(Connection.java:158)
+	at com.datastax.driver.core.Connection$1.operationComplete(Connection.java:141)
+	at com.datastax.shaded.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:680)
+	at com.datastax.shaded.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:603)
+	at com.datastax.shaded.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:563)
+	at com.datastax.shaded.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:424)
+	at com.datastax.shaded.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:276)
+	at com.datastax.shaded.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:292)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at com.datastax.shaded.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:750)
+Created keyspaces. Sleeping 3s for propagation.
+Sleeping 2s...
+Warming up WRITE with 150000 iterations...
+Failed to connect over JMX; not collecting these stats
+Running WRITE with 50 threads 90 seconds
+Failed to connect over JMX; not collecting these stats
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          5380,    5380,    5380,    5380,     6.9,    10.3,    10.4,    10.5,    11.3,    13.9,    1.0,  0.00000,      0,      0,       0,       0,       0,       0
+total,         12625,    7245,    7245,    7245,     6.9,    10.2,    10.3,    10.4,    10.8,    13.2,    2.0,  0.10421,      0,      0,       0,       0,       0,       0
+total,         19901,    7276,    7276,    7276,     6.9,    10.2,    10.3,    10.4,    10.7,    14.6,    3.0,  0.07718,      0,      0,       0,       0,       0,       0
+total,         27163,    7262,    7262,    7262,     6.9,    10.2,    10.3,    10.4,    11.0,    17.7,    4.0,  0.06023,      0,      0,       0,       0,       0,       0
+total,         34406,    7243,    7243,    7243,     6.9,    10.2,    10.3,    10.4,    10.5,    17.3,    5.0,  0.04907,      0,      0,       0,       0,       0,       0
+total,         41567,    7161,    7161,    7161,     7.0,    10.2,    10.3,    10.4,    10.5,    14.5,    6.0,  0.04106,      0,      0,       0,       0,       0,       0
+total,         48809,    7242,    7242,    7242,     6.9,    10.2,    10.3,    10.4,    10.5,    13.7,    7.0,  0.03545,      0,      0,       0,       0,       0,       0
+total,         56048,    7239,    7239,    7239,     6.9,    10.2,    10.3,    10.4,    10.4,    10.8,    8.0,  0.03113,      0,      0,       0,       0,       0,       0
+total,         63290,    7242,    7242,    7242,     6.9,    10.2,    10.3,    10.4,    10.5,    10.7,    9.0,  0.02776,      0,      0,       0,       0,       0,       0
+total,         70440,    7150,    7150,    7150,     7.0,    10.2,    10.3,    10.4,    15.0,    16.9,   10.0,  0.02500,      0,      0,       0,       0,       0,       0
+total,         77621,    7181,    7181,    7181,     6.9,    10.2,    10.3,    10.4,    10.7,    11.6,   11.0,  0.02274,      0,      0,       0,       0,       0,       0
+total,         84833,    7212,    7212,    7212,     6.9,    10.2,    10.3,    10.4,    10.5,    10.8,   12.0,  0.02087,      0,      0,       0,       0,       0,       0
+total,         92077,    7244,    7244,    7244,     6.9,    10.2,    10.3,    10.4,    10.5,    10.7,   13.0,  0.01930,      0,      0,       0,       0,       0,       0
+total,         97997,    5920,    5920,    5920,     8.4,    10.2,    10.4,    88.9,   127.8,   134.0,   14.0,  0.01828,      0,      0,       0,       0,       0,       0
+total,        105251,    7254,    7254,    7254,     6.9,    10.2,    10.3,    10.4,    10.6,    13.3,   15.0,  0.01712,      0,      0,       0,       0,       0,       0
+total,        111548,    6297,    6297,    6297,     7.9,    10.3,    10.4,    15.0,   156.6,   158.3,   16.0,  0.01622,      0,      0,       0,       0,       0,       0
+total,        118661,    7113,    7113,    7113,     7.0,    10.2,    10.3,    10.4,    10.5,    11.1,   17.0,  0.01527,      0,      0,       0,       0,       0,       0
+total,        125855,    7194,    7194,    7194,     7.0,    10.2,    10.3,    10.4,    10.5,    10.6,   18.0,  0.01442,      0,      0,       0,       0,       0,       0
+total,        133163,    7308,    7308,    7308,     6.8,    10.2,    10.3,    10.4,    10.4,    10.5,   19.0,  0.01371,      0,      0,       0,       0,       0,       0
+total,        140419,    7256,    7256,    7256,     6.9,    10.2,    10.3,    10.4,    10.5,    11.6,   20.0,  0.01305,      0,      0,       0,       0,       0,       0
+total,        147641,    7222,    7222,    7222,     6.9,    10.2,    10.4,    10.6,    18.3,    19.6,   21.0,  0.01246,      0,      0,       0,       0,       0,       0
+total,        154934,    7293,    7293,    7293,     6.8,    10.2,    10.3,    10.4,    10.4,    10.6,   22.0,  0.01192,      0,      0,       0,       0,       0,       0
+total,        162103,    7169,    7169,    7169,     7.0,    10.2,    10.3,    10.4,    10.5,    10.6,   23.0,  0.01140,      0,      0,       0,       0,       0,       0
+total,        169324,    7221,    7221,    7221,     6.9,    10.2,    10.3,    10.4,    10.4,    10.8,   24.0,  0.01092,      0,      0,       0,       0,       0,       0
+total,        176598,    7274,    7274,    7274,     6.9,    10.2,    10.3,    10.4,    10.4,    10.7,   25.0,  0.01050,      0,      0,       0,       0,       0,       0
+total,        183800,    7202,    7202,    7202,     6.9,    10.2,    10.3,    10.4,    10.5,    15.6,   26.0,  0.01010,      0,      0,       0,       0,       0,       0
+total,        191015,    7215,    7215,    7215,     6.9,    10.2,    10.3,    10.4,    10.5,    16.3,   27.0,  0.00974,      0,      0,       0,       0,       0,       0
+total,        198245,    7230,    7230,    7230,     6.9,    10.2,    10.3,    10.4,    10.4,    12.0,   28.0,  0.00939,      0,      0,       0,       0,       0,       0
+total,        205539,    7294,    7294,    7294,     6.8,    10.2,    10.3,    10.4,    10.6,    11.4,   29.0,  0.00908,      0,      0,       0,       0,       0,       0
+total,        212724,    7185,    7185,    7185,     6.9,    10.2,    10.3,    10.4,    10.5,    10.5,   30.0,  0.00878,      0,      0,       0,       0,       0,       0
+total,        219875,    7151,    7151,    7151,     7.0,    10.2,    10.3,    10.5,    18.4,    21.6,   31.0,  0.00850,      0,      0,       0,       0,       0,       0
+total,        227167,    7292,    7292,    7292,     6.9,    10.2,    10.3,    10.4,    10.5,    11.1,   32.0,  0.00825,      0,      0,       0,       0,       0,       0
+total,        234354,    7187,    7187,    7187,     7.0,    10.2,    10.3,    10.4,    10.4,    10.8,   33.0,  0.00800,      0,      0,       0,       0,       0,       0
+total,        241593,    7239,    7239,    7239,     6.9,    10.2,    10.3,    10.4,    10.5,    10.7,   34.0,  0.00776,      0,      0,       0,       0,       0,       0
+total,        248726,    7133,    7133,    7133,     7.0,    10.2,    10.3,    10.4,    10.4,    10.8,   35.0,  0.00755,      0,      0,       0,       0,       0,       0
+total,        255939,    7213,    7213,    7213,     6.9,    10.2,    10.3,    10.4,    10.5,    10.6,   36.0,  0.00734,      0,      0,       0,       0,       0,       0
+total,        263048,    7109,    7109,    7109,     7.0,    10.2,    10.3,    10.4,    10.4,    10.6,   37.0,  0.00714,      0,      0,       0,       0,       0,       0
+total,        270362,    7314,    7314,    7314,     6.8,    10.2,    10.3,    10.4,    10.5,    10.5,   38.0,  0.00697,      0,      0,       0,       0,       0,       0
+total,        277253,    6891,    6891,    6891,     7.2,    10.2,    10.3,    10.7,    73.8,    75.4,   39.0,  0.00682,      0,      0,       0,       0,       0,       0
+total,        284576,    7323,    7323,    7323,     6.8,    10.2,    10.3,    10.4,    10.5,    10.9,   40.0,  0.00666,      0,      0,       0,       0,       0,       0
+total,        290865,    6289,    6289,    6289,     7.9,    10.2,    10.4,    67.5,   103.3,   104.2,   41.0,  0.00656,      0,      0,       0,       0,       0,       0
+total,        298108,    7243,    7243,    7243,     6.9,    10.2,    10.3,    10.4,    13.7,    17.1,   42.0,  0.00641,      0,      0,       0,       0,       0,       0
+total,        305303,    7195,    7195,    7195,     6.9,    10.2,    10.3,    10.4,    10.5,    10.5,   43.0,  0.00626,      0,      0,       0,       0,       0,       0
+total,        312471,    7168,    7168,    7168,     7.0,    10.2,    10.3,    10.4,    10.5,    10.8,   44.0,  0.00612,      0,      0,       0,       0,       0,       0
+total,        319595,    7124,    7124,    7124,     7.0,    10.2,    10.3,    10.4,    10.4,    10.5,   45.0,  0.00599,      0,      0,       0,       0,       0,       0
+total,        326784,    7189,    7189,    7189,     7.0,    10.2,    10.3,    10.4,    10.4,    12.0,   46.0,  0.00586,      0,      0,       0,       0,       0,       0
+total,        334140,    7356,    7356,    7356,     6.8,    10.2,    10.3,    10.4,    10.4,    10.6,   47.0,  0.00575,      0,      0,       0,       0,       0,       0
+total,        341306,    7166,    7166,    7166,     7.0,    10.2,    10.3,    10.4,    10.4,    10.7,   48.0,  0.00563,      0,      0,       0,       0,       0,       0
+total,        348542,    7236,    7236,    7236,     6.9,    10.2,    10.3,    10.4,    10.4,    10.6,   49.0,  0.00552,      0,      0,       0,       0,       0,       0
+total,        355809,    7267,    7267,    7267,     6.9,    10.2,    10.3,    10.4,    10.4,    10.9,   50.0,  0.00541,      0,      0,       0,       0,       0,       0
+total,        363042,    7233,    7233,    7233,     6.9,    10.2,    10.3,    10.4,    10.4,    10.6,   51.0,  0.00531,      0,      0,       0,       0,       0,       0
+total,        370204,    7162,    7162,    7162,     7.0,    10.2,    10.3,    10.5,    17.8,    19.5,   52.0,  0.00520,      0,      0,       0,       0,       0,       0
+total,        377378,    7174,    7174,    7174,     6.9,    10.2,    10.3,    10.4,    10.5,    10.6,   53.0,  0.00511,      0,      0,       0,       0,       0,       0
+total,        384561,    7183,    7183,    7183,     7.0,    10.2,    10.3,    10.4,    10.4,    10.5,   54.0,  0.00501,      0,      0,       0,       0,       0,       0
+total,        391845,    7284,    7284,    7284,     6.9,    10.2,    10.3,    10.4,    10.4,    10.5,   55.0,  0.00492,      0,      0,       0,       0,       0,       0
+total,        399042,    7197,    7197,    7197,     6.9,    10.2,    10.3,    10.4,    10.4,    10.6,   56.0,  0.00484,      0,      0,       0,       0,       0,       0
+total,        406311,    7269,    7269,    7269,     6.9,    10.2,    10.3,    10.4,    10.4,    10.5,   57.0,  0.00475,      0,      0,       0,       0,       0,       0
+total,        413615,    7304,    7304,    7304,     6.8,    10.2,    10.3,    10.4,    10.4,    10.5,   58.0,  0.00468,      0,      0,       0,       0,       0,       0
+total,        420753,    7138,    7138,    7138,     7.0,    10.2,    10.3,    10.4,    10.4,    10.7,   59.0,  0.00460,      0,      0,       0,       0,       0,       0
+total,        427990,    7237,    7237,    7237,     6.9,    10.2,    10.3,    10.4,    10.5,    10.8,   60.0,  0.00453,      0,      0,       0,       0,       0,       0
+total,        435103,    7113,    7113,    7113,     7.0,    10.2,    10.3,    10.4,    10.4,    10.5,   61.0,  0.00446,      0,      0,       0,       0,       0,       0
+total,        442412,    7309,    7309,    7309,     6.8,    10.2,    10.3,    10.4,    13.7,    16.1,   62.0,  0.00440,      0,      0,       0,       0,       0,       0
+total,        449589,    7177,    7177,    7177,     6.9,    10.2,    10.3,    10.4,    10.5,    10.6,   63.0,  0.00433,      0,      0,       0,       0,       0,       0
+total,        456733,    7144,    7144,    7144,     7.0,    10.2,    10.3,    10.4,    10.5,    10.6,   64.0,  0.00426,      0,      0,       0,       0,       0,       0
+total,        463942,    7209,    7209,    7209,     6.9,    10.2,    10.3,    10.4,    10.5,    10.5,   65.0,  0.00420,      0,      0,       0,       0,       0,       0
+total,        470731,    6789,    6789,    6789,     7.4,    10.2,    10.4,    11.0,    77.9,    83.5,   66.0,  0.00414,      0,      0,       0,       0,       0,       0
+total,        477940,    7209,    7209,    7209,     6.9,    10.2,    10.3,    10.4,    10.5,    10.7,   67.0,  0.00408,      0,      0,       0,       0,       0,       0
+total,        484222,    6282,    6282,    6282,     7.4,    10.2,    10.4,    11.1,    76.2,    79.2,   68.0,  0.00412,      0,      0,       0,       0,       0,       0
+total,        491229,    7007,    7007,    7007,     7.6,    10.2,    10.3,    10.7,   123.3,   126.2,   69.0,  0.00432,      0,      0,       0,       0,       0,       0
+total,        498431,    7202,    7202,    7202,     6.9,    10.2,    10.3,    10.4,    10.4,    10.5,   70.0,  0.00426,      0,      0,       0,       0,       0,       0
+total,        505666,    7235,    7235,    7235,     6.9,    10.2,    10.3,    10.4,    10.5,    10.5,   71.0,  0.00420,      0,      0,       0,       0,       0,       0
+total,        512861,    7195,    7195,    7195,     6.9,    10.2,    10.3,    10.3,    10.4,    10.5,   72.0,  0.00414,      0,      0,       0,       0,       0,       0
+total,        520076,    7215,    7215,    7215,     6.9,    10.2,    10.4,    10.6,    19.0,    19.6,   73.0,  0.00409,      0,      0,       0,       0,       0,       0
+total,        527293,    7217,    7217,    7217,     6.9,    10.2,    10.3,    10.4,    10.4,    10.6,   74.0,  0.00403,      0,      0,       0,       0,       0,       0
+total,        534476,    7183,    7183,    7183,     7.0,    10.2,    10.3,    10.4,    10.4,    15.1,   75.0,  0.00398,      0,      0,       0,       0,       0,       0
+total,        541705,    7229,    7229,    7229,     6.9,    10.2,    10.3,    10.4,    10.4,    10.7,   76.0,  0.00392,      0,      0,       0,       0,       0,       0
+total,        548921,    7216,    7216,    7216,     6.9,    10.2,    10.3,    10.3,    10.5,    12.0,   77.0,  0.00387,      0,      0,       0,       0,       0,       0
+total,        556225,    7304,    7304,    7304,     6.8,    10.2,    10.3,    10.3,    10.4,    11.6,   78.0,  0.00383,      0,      0,       0,       0,       0,       0
+total,        563437,    7212,    7212,    7212,     6.9,    10.2,    10.3,    10.4,    10.4,    12.2,   79.0,  0.00378,      0,      0,       0,       0,       0,       0
+total,        570697,    7260,    7260,    7260,     6.9,    10.2,    10.3,    10.4,    10.5,    10.7,   80.0,  0.00373,      0,      0,       0,       0,       0,       0
+total,        577906,    7209,    7209,    7209,     6.9,    10.2,    10.3,    10.4,    10.4,    10.5,   81.0,  0.00369,      0,      0,       0,       0,       0,       0
+total,        585126,    7220,    7220,    7220,     6.9,    10.2,    10.3,    10.6,    20.8,    21.9,   82.0,  0.00365,      0,      0,       0,       0,       0,       0
+total,        592430,    7304,    7304,    7304,     6.8,    10.2,    10.3,    10.4,    10.5,    10.5,   83.0,  0.00360,      0,      0,       0,       0,       0,       0
+total,        599626,    7196,    7196,    7196,     6.9,    10.2,    10.3,    10.4,    10.4,    10.5,   84.0,  0.00356,      0,      0,       0,       0,       0,       0
+total,        606895,    7269,    7269,    7269,     6.9,    10.2,    10.3,    10.3,    10.4,    10.6,   85.0,  0.00352,      0,      0,       0,       0,       0,       0
+total,        614191,    7296,    7296,    7296,     6.8,    10.2,    10.3,    10.3,    10.4,    10.5,   86.0,  0.00348,      0,      0,       0,       0,       0,       0
+total,        621525,    7334,    7334,    7334,     6.8,    10.2,    10.3,    10.3,    10.4,    10.8,   87.0,  0.00345,      0,      0,       0,       0,       0,       0
+total,        628712,    7187,    7187,    7187,     6.9,    10.2,    10.3,    10.4,    10.4,    10.7,   88.0,  0.00341,      0,      0,       0,       0,       0,       0
+total,        636011,    7299,    7299,    7299,     6.8,    10.2,    10.3,    10.4,    10.4,    10.5,   89.0,  0.00337,      0,      0,       0,       0,       0,       0
+total,        643339,    7328,    7328,    7328,     6.8,    10.2,    10.3,    10.4,    10.4,    10.5,   90.0,  0.00334,      0,      0,       0,       0,       0,       0
+total,        645140,    7124,    7124,    7124,     7.0,    10.2,    10.3,    10.4,    10.6,    11.1,   90.3,  0.00331,      0,      0,       0,       0,       0,       0
+
+
+Results:
+Op rate                   :    7,148 op/s  [WRITE: 7,148 op/s]
+Partition rate            :    7,148 pk/s  [WRITE: 7,148 pk/s]
+Row rate                  :    7,148 row/s [WRITE: 7,148 row/s]
+Latency mean              :    7.0 ms [WRITE: 7.0 ms]
+Latency median            :   10.2 ms [WRITE: 10.2 ms]
+Latency 95th percentile   :   10.3 ms [WRITE: 10.3 ms]
+Latency 99th percentile   :   10.4 ms [WRITE: 10.4 ms]
+Latency 99.9th percentile :   14.6 ms [WRITE: 14.6 ms]
+Latency max               :  158.3 ms [WRITE: 158.3 ms]
+Total partitions          :    645,140 [WRITE: 645,140]
+Total errors              :          0 [WRITE: 0]
+Total GC count            : 0
+Total GC memory           : 0.000 KiB
+Total GC time             :    0.0 seconds
+Avg GC time               :    NaN ms
+StdDev GC time            :    0.0 ms
+Total operation time      : 00:01:30
+
+END
