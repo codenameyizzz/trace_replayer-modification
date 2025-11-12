@@ -1,0 +1,36 @@
+=== GC_PAUSE batch starts @ Tue Nov 11 10:26:24 UTC 2025 (DUR=3600s) ===
+[RUN ] I=1000 J=500 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i1000_j500_min10_max50_20251111-102624.log
+[DONE] I=1000 J=500 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i1000_j500_min10_max50_20251111-102624.log.stats)
+[RUN ] I=2000 J=500 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i2000_j500_min10_max50_20251111-112624.log
+[DONE] I=2000 J=500 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i2000_j500_min10_max50_20251111-112624.log.stats)
+[RUN ] I=3000 J=500 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i3000_j500_min10_max50_20251111-122624.log
+[DONE] I=3000 J=500 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i3000_j500_min10_max50_20251111-122624.log.stats)
+[RUN ] I=7000 J=500 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i7000_j500_min10_max50_20251111-132624.log
+[DONE] I=7000 J=500 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i7000_j500_min10_max50_20251111-132624.log.stats)
+[RUN ] I=10000 J=500 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i10000_j500_min10_max50_20251111-142624.log
+[DONE] I=10000 J=500 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i10000_j500_min10_max50_20251111-142624.log.stats)
+[RUN ] I=5000 J=100 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j100_min10_max50_20251111-152625.log
+[DONE] I=5000 J=100 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j100_min10_max50_20251111-152625.log.stats)
+[RUN ] I=5000 J=200 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j200_min10_max50_20251111-162625.log
+[DONE] I=5000 J=200 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j200_min10_max50_20251111-162625.log.stats)
+[RUN ] I=5000 J=300 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j300_min10_max50_20251111-172625.log
+[DONE] I=5000 J=300 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j300_min10_max50_20251111-172625.log.stats)
+[RUN ] I=5000 J=700 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j700_min10_max50_20251111-182625.log
+[DONE] I=5000 J=700 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j700_min10_max50_20251111-182625.log.stats)
+[RUN ] I=5000 J=1000 MIN=10 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j1000_min10_max50_20251111-192625.log
+[DONE] I=5000 J=1000 MIN=10 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j1000_min10_max50_20251111-192625.log.stats)
+[RUN ] I=5000 J=500 MIN=5 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min5_max50_20251111-202625.log
+[DONE] I=5000 J=500 MIN=5 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min5_max50_20251111-202625.log.stats)
+[RUN ] I=5000 J=500 MIN=8 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min8_max50_20251111-212625.log
+[DONE] I=5000 J=500 MIN=8 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min8_max50_20251111-212625.log.stats)
+[RUN ] I=5000 J=500 MIN=12 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min12_max50_20251111-222625.log
+[DONE] I=5000 J=500 MIN=12 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min12_max50_20251111-222625.log.stats)
+[RUN ] I=5000 J=500 MIN=15 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min15_max50_20251111-232625.log
+[DONE] I=5000 J=500 MIN=15 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min15_max50_20251111-232625.log.stats)
+[RUN ] I=5000 J=500 MIN=20 MAX=50 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min20_max50_20251112-002625.log
+[DONE] I=5000 J=500 MIN=20 MAX=50  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min20_max50_20251112-002625.log.stats)
+[RUN ] I=5000 J=500 MIN=10 MAX=30 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min10_max30_20251112-012625.log
+[DONE] I=5000 J=500 MIN=10 MAX=30  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min10_max30_20251112-012625.log.stats)
+[RUN ] I=5000 J=500 MIN=10 MAX=40 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min10_max40_20251112-022625.log
+[DONE] I=5000 J=500 MIN=10 MAX=40  (stats: /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min10_max40_20251112-022625.log.stats)
+[RUN ] I=5000 J=500 MIN=10 MAX=60 → /home/cc/trace-ACER/trace_replayer/logs_gc_pause/alibaba_gc_pause_i5000_j500_min10_max60_20251112-032625.log

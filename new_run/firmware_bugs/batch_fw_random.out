@@ -1,0 +1,30 @@
+=== FW_RANDOM batch starts @ Mon Nov 10 16:15:01 UTC 2025 (DUR=3600s) ===
+[RUN ] p=5% r=2 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r2_20251110-161501.log
+[DONE] p=5% r=2 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r2_20251110-161501.log.stats)
+[RUN ] p=5% r=2 d=20ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d20_r2_20251110-171501.log
+[DONE] p=5% r=2 d=20ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d20_r2_20251110-171501.log.stats)
+[RUN ] p=5% r=2 d=30ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d30_r2_20251110-181501.log
+[DONE] p=5% r=2 d=30ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d30_r2_20251110-181501.log.stats)
+[RUN ] p=5% r=2 d=40ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d40_r2_20251110-191501.log
+[DONE] p=5% r=2 d=40ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d40_r2_20251110-191501.log.stats)
+[RUN ] p=5% r=2 d=50ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d50_r2_20251110-201502.log
+[DONE] p=5% r=2 d=50ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d50_r2_20251110-201502.log.stats)
+[SKIP] p=5% r=2 d=10ms (stats exist)
+[RUN ] p=10% r=2 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p10_d10_r2_20251110-211502.log
+[DONE] p=10% r=2 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p10_d10_r2_20251110-211502.log.stats)
+[RUN ] p=15% r=2 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p15_d10_r2_20251110-221502.log
+[DONE] p=15% r=2 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p15_d10_r2_20251110-221502.log.stats)
+[RUN ] p=20% r=2 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p20_d10_r2_20251110-231502.log
+[DONE] p=20% r=2 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p20_d10_r2_20251110-231502.log.stats)
+[RUN ] p=25% r=2 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p25_d10_r2_20251111-001502.log
+[DONE] p=25% r=2 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p25_d10_r2_20251111-001502.log.stats)
+[RUN ] p=5% r=1 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r1_20251111-011502.log
+[DONE] p=5% r=1 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r1_20251111-011502.log.stats)
+[SKIP] p=5% r=2 d=10ms (stats exist)
+[RUN ] p=5% r=3 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r3_20251111-021502.log
+[DONE] p=5% r=3 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r3_20251111-021502.log.stats)
+[RUN ] p=5% r=4 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r4_20251111-031502.log
+[DONE] p=5% r=4 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r4_20251111-031502.log.stats)
+[RUN ] p=5% r=5 d=10ms → /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r5_20251111-041502.log
+[DONE] p=5% r=5 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs_fw_random/alibaba_fw_random_p5_d10_r5_20251111-041502.log.stats)
+=== FW_RANDOM batch finished @ Tue Nov 11 05:15:02 UTC 2025 ===

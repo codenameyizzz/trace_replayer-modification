@@ -1,0 +1,50 @@
+=== Batch starts @ Sun Nov  9 16:24:14 UTC 2025 (DUR=3600s, NO_SUDO=1) ===
+[RUN Delay] delay=10ms, inject=0%, retries=0
+Select fault to inject:
+1) media_retries	    6) firmware_bandwidth_drop
+2) firmware_bug_random	    7) voltage_read_retry
+3) gc_pause		    8) firmware_throttle
+4) mlc_variability	    9) wear_pathology
+5) ecc_read_retry
+#? Building io_replayer with fault=media_retries...
+io_replayer.c: In function ‘perform_io’:
+io_replayer.c:260:28: warning: division by zero [-Wdiv-by-zero]
+  260 |      int retries = (rand() % MAX_MEDIA_RETRIES) + 1;
+      |                            ^
+Running ./io_replayer on /home/cc/traces/alibaba.trace → /home/cc/logs/alibaba_media_retries_p0_r0_d10_20251109-162414.log (for 3600s)...
+Device ==> 
+Trace ==> /home/cc/traces/alibaba.trace
+Logfile ==> /home/cc/logs/alibaba_media_retries_p0_r0_d10_20251109-162414.log
+Cannot open 
+=== Non-interactive batch starts @ Sun Nov  9 16:32:33 UTC 2025 (DUR=3600s) ===
+[RUN ] p=0% r=0 d=10ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d10_20251109-163233.log
+[DONE] p=0% r=0 d=10ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d10_20251109-163233.log.stats)
+[RUN ] p=0% r=0 d=20ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d20_20251109-173233.log
+[DONE] p=0% r=0 d=20ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d20_20251109-173233.log.stats)
+[RUN ] p=0% r=0 d=30ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d30_20251109-183233.log
+[DONE] p=0% r=0 d=30ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d30_20251109-183233.log.stats)
+[RUN ] p=0% r=0 d=40ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d40_20251109-193234.log
+[DONE] p=0% r=0 d=40ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d40_20251109-193234.log.stats)
+[RUN ] p=0% r=0 d=50ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d50_20251109-203234.log
+[DONE] p=0% r=0 d=50ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r0_d50_20251109-203234.log.stats)
+[RUN ] p=5% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p5_r1_d0_20251109-213234.log
+[DONE] p=5% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p5_r1_d0_20251109-213234.log.stats)
+[RUN ] p=10% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p10_r1_d0_20251109-223234.log
+[DONE] p=10% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p10_r1_d0_20251109-223234.log.stats)
+[RUN ] p=15% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p15_r1_d0_20251109-233234.log
+[DONE] p=15% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p15_r1_d0_20251109-233234.log.stats)
+[RUN ] p=20% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p20_r1_d0_20251110-003234.log
+[DONE] p=20% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p20_r1_d0_20251110-003234.log.stats)
+[RUN ] p=25% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p25_r1_d0_20251110-013234.log
+[DONE] p=25% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p25_r1_d0_20251110-013234.log.stats)
+[RUN ] p=0% r=1 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r1_d0_20251110-023234.log
+[DONE] p=0% r=1 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r1_d0_20251110-023234.log.stats)
+[RUN ] p=0% r=2 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r2_d0_20251110-033234.log
+[DONE] p=0% r=2 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r2_d0_20251110-033234.log.stats)
+[RUN ] p=0% r=3 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r3_d0_20251110-043234.log
+[DONE] p=0% r=3 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r3_d0_20251110-043234.log.stats)
+[RUN ] p=0% r=4 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r4_d0_20251110-053234.log
+[DONE] p=0% r=4 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r4_d0_20251110-053234.log.stats)
+[RUN ] p=0% r=5 d=0ms → /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r5_d0_20251110-063234.log
+[DONE] p=0% r=5 d=0ms  (stats: /home/cc/trace-ACER/trace_replayer/logs/alibaba_media_retries_p0_r5_d0_20251110-063234.log.stats)
+=== Batch finished @ Mon Nov 10 07:32:34 UTC 2025 ===
